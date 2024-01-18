@@ -7,7 +7,29 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "guis",
+        "children": []
+      },
+      {
+        "name": "races",
+        "children": [
+          {
+            "name": "protoss",
+            "children": []
+          },
+          {
+            "name": "zerg",
+            "children": []
+          },
+          {
+            "name": "terrans",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "scrpg",

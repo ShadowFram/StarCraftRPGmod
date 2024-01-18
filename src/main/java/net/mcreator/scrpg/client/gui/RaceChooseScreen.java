@@ -9,6 +9,8 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.scrpg.world.inventory.RaceChooseMenu;
+import net.mcreator.scrpg.network.RaceChooseButtonMessage;
+import net.mcreator.scrpg.ScrpgMod;
 
 import java.util.HashMap;
 
@@ -84,15 +86,19 @@ public class RaceChooseScreen extends AbstractContainerScreen<RaceChooseMenu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_protoss = new ImageButton(this.leftPos + 10, this.topPos + -49, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_protoss.png"), 289, 284, e -> {
+		imagebutton_protoss = new ImageButton(this.leftPos + 5, this.topPos + -46, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_protoss.png"), 289, 284, e -> {
 		});
 		guistate.put("button:imagebutton_protoss", imagebutton_protoss);
 		this.addRenderableWidget(imagebutton_protoss);
-		imagebutton_zerg = new ImageButton(this.leftPos + -86, this.topPos + 80, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zerg.png"), 289, 284, e -> {
+		imagebutton_zerg = new ImageButton(this.leftPos + -64, this.topPos + 61, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zerg.png"), 289, 284, e -> {
+			if (true) {
+				ScrpgMod.PACKET_HANDLER.sendToServer(new RaceChooseButtonMessage(1, x, y, z));
+				RaceChooseButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_zerg", imagebutton_zerg);
 		this.addRenderableWidget(imagebutton_zerg);
-		imagebutton_terrans = new ImageButton(this.leftPos + 89, this.topPos + 84, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_terrans.png"), 289, 284, e -> {
+		imagebutton_terrans = new ImageButton(this.leftPos + 74, this.topPos + 60, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_terrans.png"), 289, 284, e -> {
 		});
 		guistate.put("button:imagebutton_terrans", imagebutton_terrans);
 		this.addRenderableWidget(imagebutton_terrans);

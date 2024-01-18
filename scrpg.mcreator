@@ -45,6 +45,7 @@
     {
       "name": "StartZerg",
       "type": "procedure",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "start_zerg",
@@ -60,9 +61,52 @@
         ]
       },
       "path": "~/races/zerg"
+    },
+    {
+      "name": "OpenRaceChooseGUI",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_race_choose_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/OpenRaceChooseGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/guis"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "ChooseFraction",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {

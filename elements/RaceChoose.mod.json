@@ -39,6 +39,15 @@
           "x": 153,
           "y": 121
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "yn262f88um011_photo-resizer.ru.png",
+          "use1Xscale": false,
+          "x": 63,
+          "y": 33
+        }
       }
     ],
     "gridSettings": {

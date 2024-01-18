@@ -51,6 +51,10 @@ public class RaceChooseScreen extends AbstractContainerScreen<RaceChooseMenu> {
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("scrpg:textures/screens/yn262f88um011_photo-resizer.ru.png"));
+		this.blit(ms, this.leftPos + -1, this.topPos + -4, 0, 0, 300, 169, 300, 169);
+
 		RenderSystem.disableBlend();
 	}
 

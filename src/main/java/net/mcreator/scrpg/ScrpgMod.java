@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.scrpg.init.ScrpgModMenus;
+import net.mcreator.scrpg.init.ScrpgModItems;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -48,6 +49,8 @@ public class ScrpgMod {
 	public ScrpgMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		ScrpgModItems.REGISTRY.register(bus);
 
 		ScrpgModMenus.REGISTRY.register(bus);
 

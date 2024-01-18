@@ -8,17 +8,68 @@
       "registry_name": "race_choose",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/scrpg/network/RaceChooseButtonMessage.java",
           "src/main/java/net/mcreator/scrpg/client/gui/RaceChooseScreen.java",
           "src/main/java/net/mcreator/scrpg/world/inventory/RaceChooseMenu.java"
         ]
       },
       "path": "~/guis"
+    },
+    {
+      "name": "ZergLogo",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zerg_logo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/item/ZergLogoItem.java",
+          "src/main/resources/assets/scrpg/models/item/zerg_logo.json"
+        ]
+      },
+      "path": "~/races/zerg"
+    },
+    {
+      "name": "BecomeZerg",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "become_zerg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/scrpg/advancements/become_zerg.json"
+        ]
+      },
+      "path": "~/races/zerg"
+    },
+    {
+      "name": "StartZerg",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start_zerg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/StartZergProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/races/zerg"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "advancements.become_zerg.title": "Become Zerg!",
+      "advancements.become_zerg.descr": "Choose zerg like your fraction!",
+      "item.scrpg.zerg_logo": "Zerg Logo"
+    }
   },
   "foldersRoot": {
     "name": "~",

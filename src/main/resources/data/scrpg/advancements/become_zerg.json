@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "scrpg:zerg_logo"
+    },
+    "title": {
+      "translate": "advancements.become_zerg.title"
+    },
+    "description": {
+      "translate": "advancements.become_zerg.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "become_zerg": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

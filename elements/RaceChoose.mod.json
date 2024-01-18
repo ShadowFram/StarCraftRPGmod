@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_protoss",
+          "image": "protoss.png",
+          "hoveredImage": "",
+          "x": 74,
+          "y": -12
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_zerg",
+          "image": "zerg.png",
+          "hoveredImage": "",
+          "x": -22,
+          "y": 117
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_terrans",
+          "image": "terrans.png",
+          "hoveredImage": "",
+          "x": 153,
+          "y": 121
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

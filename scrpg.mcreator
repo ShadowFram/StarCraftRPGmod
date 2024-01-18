@@ -1,5 +1,20 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "RaceChoose",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_choose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/client/gui/RaceChooseScreen.java",
+          "src/main/java/net/mcreator/scrpg/world/inventory/RaceChooseMenu.java"
+        ]
+      },
+      "path": "~/guis"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {

@@ -86,11 +86,11 @@ public class RaceChooseScreen extends AbstractContainerScreen<RaceChooseMenu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_protoss = new ImageButton(this.leftPos + 5, this.topPos + -46, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_protoss.png"), 289, 284, e -> {
+		imagebutton_protoss = new ImageButton(this.leftPos + -90, this.topPos + -78, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_protoss.png"), 289, 284, e -> {
 		});
 		guistate.put("button:imagebutton_protoss", imagebutton_protoss);
 		this.addRenderableWidget(imagebutton_protoss);
-		imagebutton_zerg = new ImageButton(this.leftPos + -64, this.topPos + 61, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zerg.png"), 289, 284, e -> {
+		imagebutton_zerg = new ImageButton(this.leftPos + 16, this.topPos + 114, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zerg.png"), 289, 284, e -> {
 			if (true) {
 				ScrpgMod.PACKET_HANDLER.sendToServer(new RaceChooseButtonMessage(1, x, y, z));
 				RaceChooseButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -98,7 +98,7 @@ public class RaceChooseScreen extends AbstractContainerScreen<RaceChooseMenu> {
 		});
 		guistate.put("button:imagebutton_zerg", imagebutton_zerg);
 		this.addRenderableWidget(imagebutton_zerg);
-		imagebutton_terrans = new ImageButton(this.leftPos + 74, this.topPos + 60, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_terrans.png"), 289, 284, e -> {
+		imagebutton_terrans = new ImageButton(this.leftPos + 103, this.topPos + -79, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_terrans.png"), 289, 284, e -> {
 		});
 		guistate.put("button:imagebutton_terrans", imagebutton_terrans);
 		this.addRenderableWidget(imagebutton_terrans);

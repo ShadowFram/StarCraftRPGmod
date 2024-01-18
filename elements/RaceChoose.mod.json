@@ -11,13 +11,22 @@
     "doesPauseGame": false,
     "components": [
       {
+        "type": "image",
+        "data": {
+          "image": "yn262f88um011_photo-resizer.ru.png",
+          "use1Xscale": false,
+          "x": 63,
+          "y": 33
+        }
+      },
+      {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_protoss",
           "image": "protoss.png",
           "hoveredImage": "",
-          "x": 69,
-          "y": -9
+          "x": -26,
+          "y": -41
         }
       },
       {
@@ -29,8 +38,8 @@
           "onClick": {
             "name": "StartZerg"
           },
-          "x": 0,
-          "y": 98
+          "x": 80,
+          "y": 151
         }
       },
       {
@@ -39,17 +48,8 @@
           "name": "imagebutton_terrans",
           "image": "terrans.png",
           "hoveredImage": "",
-          "x": 138,
-          "y": 97
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "yn262f88um011_photo-resizer.ru.png",
-          "use1Xscale": false,
-          "x": 63,
-          "y": 33
+          "x": 167,
+          "y": -42
         }
       }
     ],

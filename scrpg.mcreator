@@ -215,16 +215,21 @@
       "path": "~/races/terrans"
     },
     {
-      "name": "Protosslogo",
-      "type": "item",
-      "sortid": 13,
+      "name": "Startprotoss",
+      "type": "procedure",
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "protosslogo",
+      "registry_name": "startprotoss",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/scrpg/item/ProtosslogoItem.java",
-          "src/main/resources/assets/scrpg/models/item/protosslogo.json"
+          "src/main/java/net/mcreator/scrpg/procedures/StartprotossProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
       "path": "~/races/protoss"
@@ -244,21 +249,50 @@
       "path": "~/races/protoss"
     },
     {
-      "name": "Startprotoss",
-      "type": "procedure",
-      "sortid": 15,
+      "name": "Protosslogo",
+      "type": "item",
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "startprotoss",
+      "registry_name": "protosslogo",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/scrpg/procedures/StartprotossProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/java/net/mcreator/scrpg/item/ProtosslogoItem.java",
+          "src/main/resources/assets/scrpg/models/item/protosslogo.json"
+        ]
+      },
+      "path": "~/races/protoss"
+    },
+    {
+      "name": "EnergyBlock",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/scrpg/models/item/energy_block.json",
+          "src/main/resources/assets/scrpg/models/block/energy_block.json",
+          "src/main/java/net/mcreator/scrpg/block/EnergyBlockBlock.java",
+          "src/main/resources/assets/scrpg/blockstates/energy_block.json"
+        ]
+      },
+      "path": "~/races/protoss"
+    },
+    {
+      "name": "ProtossMetalBlock",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protoss_metal_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/block/ProtossMetalBlockBlock.java",
+          "src/main/resources/assets/scrpg/blockstates/protoss_metal_block.json",
+          "src/main/resources/assets/scrpg/models/item/protoss_metal_block.json",
+          "src/main/resources/assets/scrpg/models/block/protoss_metal_block.json"
         ]
       },
       "path": "~/races/protoss"
@@ -275,16 +309,12 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "advancements.becomeprotoss.title": "Become Protoss!",
       "advancements.become_zerg.title": "Become Zerg!",
-      "item.scrpg.terranlogo": "Terranlogo",
-      "advancements.becomeprotoss.descr": "Choose Protoss like your fraction!",
-      "advancements.becometerran.title": "Become Terran!",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
-      "key.scrpg.open_stats": "Open Stats",
-      "advancements.becometerran.descr": "Choose Terran like your fraction!",
       "item.scrpg.zerg_logo": "Zerg Logo",
-      "item.scrpg.protosslogo": "Protosslogo"
+      "advancements.becometerran.title": "Become Terran!",
+      "key.scrpg.open_stats": "Open Stats",
+      "advancements.becometerran.descr": "Choose Terran like your fraction!"
     }
   },
   "foldersRoot": {

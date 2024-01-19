@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "scrpg:block/energyblock",
+    "up": "scrpg:block/energyblock",
+    "north": "scrpg:block/energyblock",
+    "east": "scrpg:block/energyblock",
+    "south": "scrpg:block/energyblock",
+    "west": "scrpg:block/energyblock",
+    "particle": "scrpg:block/energyblock"
+  },
+  "render_type": "solid"
+}

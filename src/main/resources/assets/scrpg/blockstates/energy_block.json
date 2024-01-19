@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "scrpg:block/energy_block"
+    }
+  }
+}

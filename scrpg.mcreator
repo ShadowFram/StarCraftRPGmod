@@ -388,6 +388,48 @@
         ]
       },
       "path": "~/guis"
+    },
+    {
+      "name": "Stathp",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stathp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/StathpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/guis"
+    },
+    {
+      "name": "Statspeed",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "statspeed",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/StatspeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/guis"
     }
   ],
   "variable_elements": [
@@ -423,6 +465,8 @@
       "item_group.scrpg.terran": "Terran",
       "gui.scrpg.starcraft_stats.label_strenght": "Strength:",
       "advancements.becomeprotoss.title": "Become Protoss!",
+      "gui.scrpg.starcraft_stats.label_hp": "HP:",
+      "gui.scrpg.starcraft_stats.label_speed": "Speed:",
       "advancements.become_zerg.title": "Become Zerg!",
       "block.scrpg.energy_block": "Energy Block",
       "item.scrpg.terranlogo": "Terranlogo",

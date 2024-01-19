@@ -50,6 +50,68 @@
           "x": 98,
           "y": 47
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_stathp",
+          "text": {
+            "fixedValue": "",
+            "name": "Stathp"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hp",
+          "text": {
+            "fixedValue": "HP:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 98,
+          "y": 61
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_statspeed",
+          "text": {
+            "fixedValue": "",
+            "name": "Statspeed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_speed",
+          "text": {
+            "fixedValue": "Speed:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 98,
+          "y": 74
+        }
       }
     ],
     "gridSettings": {

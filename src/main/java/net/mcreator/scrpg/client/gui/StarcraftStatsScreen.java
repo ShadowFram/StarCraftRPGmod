@@ -10,6 +10,8 @@ import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.scrpg.world.inventory.StarcraftStatsMenu;
 import net.mcreator.scrpg.procedures.StrengthProcedure;
+import net.mcreator.scrpg.procedures.StatspeedProcedure;
+import net.mcreator.scrpg.procedures.StathpProcedure;
 
 import java.util.HashMap;
 
@@ -73,6 +75,14 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 
 				StrengthProcedure.execute(entity), 56, 10, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_strenght"), 9, 10, -12829636);
+		this.font.draw(poseStack,
+
+				StathpProcedure.execute(entity), 26, 23, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_hp"), 9, 24, -12829636);
+		this.font.draw(poseStack,
+
+				StatspeedProcedure.execute(entity), 42, 38, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_speed"), 9, 37, -12829636);
 	}
 
 	@Override

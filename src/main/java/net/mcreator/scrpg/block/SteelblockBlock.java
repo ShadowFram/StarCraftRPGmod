@@ -16,8 +16,8 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class StellBlockBlock extends Block {
-	public StellBlockBlock() {
+public class SteelblockBlock extends Block {
+	public SteelblockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 20f));
 	}
 

@@ -1,5 +1,5 @@
 {
-  "parent": "scrpg:block/stell_block",
+  "parent": "scrpg:block/steelblock",
   "display": {
     "thirdperson": {
       "rotation": [

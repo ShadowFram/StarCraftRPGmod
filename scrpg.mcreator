@@ -315,18 +315,18 @@
       "path": "~/races/zerg"
     },
     {
-      "name": "StellBlock",
+      "name": "Steelblock",
       "type": "block",
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stell_block",
+      "registry_name": "steelblock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/scrpg/block/StellBlockBlock.java",
-          "src/main/resources/assets/scrpg/blockstates/stell_block.json",
-          "src/main/resources/assets/scrpg/models/item/stell_block.json",
-          "src/main/resources/assets/scrpg/models/block/stell_block.json"
+          "src/main/resources/assets/scrpg/models/block/steelblock.json",
+          "src/main/java/net/mcreator/scrpg/block/SteelblockBlock.java",
+          "src/main/resources/assets/scrpg/models/item/steelblock.json",
+          "src/main/resources/assets/scrpg/blockstates/steelblock.json"
         ]
       },
       "path": "~/races/terrans"
@@ -345,13 +345,13 @@
     "en_us": {
       "advancements.becomeprotoss.title": "Become Protoss!",
       "advancements.become_zerg.title": "Become Zerg!",
-      "block.scrpg.energy_block": "Enetgy Block",
+      "block.scrpg.energy_block": "Energy Block",
       "item.scrpg.terranlogo": "Terranlogo",
       "advancements.becomeprotoss.descr": "Choose Protoss like your fraction!",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "item.scrpg.zerg_logo": "Zerg Logo",
       "item.scrpg.protosslogo": "Protosslogo",
-      "block.scrpg.stell_block": "Stell Block",
+      "block.scrpg.steelblock": "Steel Block",
       "block.scrpg.creep": "Creep",
       "advancements.becometerran.title": "Become Terran!",
       "block.scrpg.protoss_metal_block": "Protoss Metal Block",

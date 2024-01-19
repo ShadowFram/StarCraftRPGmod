@@ -33,6 +33,7 @@
     {
       "name": "BecomeZerg",
       "type": "achievement",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "become_zerg",
@@ -51,9 +52,6 @@
       "locked_code": false,
       "registry_name": "start_zerg",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/scrpg/procedures/StartZergProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -113,6 +111,40 @@
         ]
       },
       "path": "~/guis"
+    },
+    {
+      "name": "Becometerran",
+      "type": "achievement",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "becometerran",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/scrpg/advancements/becometerran.json"
+        ]
+      },
+      "path": "~/races/terrans"
+    },
+    {
+      "name": "Startterran",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "startterran",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/StartterranProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/races/terrans"
     }
   ],
   "variable_elements": [
@@ -127,7 +159,9 @@
   "language_map": {
     "en_us": {
       "advancements.become_zerg.title": "Become Zerg!",
+      "advancements.becometerran.title": "Become Terran!",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
+      "advancements.becometerran.descr": "Choose terran like your fraction!",
       "item.scrpg.zerg_logo": "Zerg Logo"
     }
   },

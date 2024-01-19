@@ -50,6 +50,26 @@
           "x": 99,
           "y": 44
         }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_11",
+          "image": "11.png",
+          "hoveredImage": "tos.png",
+          "x": 58,
+          "y": 74
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_terran",
+          "image": "terran.png",
+          "hoveredImage": "22.png",
+          "x": 58,
+          "y": 107
+        }
       }
     ],
     "gridSettings": {

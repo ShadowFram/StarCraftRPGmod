@@ -22,6 +22,8 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 	private final int x, y, z;
 	private final Player entity;
 	ImageButton imagebutton_zergicon_gui_basic;
+	ImageButton imagebutton_11;
+	ImageButton imagebutton_terran;
 
 	public StarcraftStatsScreen(StarcraftStatsMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -87,5 +89,13 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 		});
 		guistate.put("button:imagebutton_zergicon_gui_basic", imagebutton_zergicon_gui_basic);
 		this.addRenderableWidget(imagebutton_zergicon_gui_basic);
+		imagebutton_11 = new ImageButton(this.leftPos + -31, this.topPos + 37, 32, 32, 0, 0, 32, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_11.png"), 32, 64, e -> {
+		});
+		guistate.put("button:imagebutton_11", imagebutton_11);
+		this.addRenderableWidget(imagebutton_11);
+		imagebutton_terran = new ImageButton(this.leftPos + -31, this.topPos + 70, 32, 32, 0, 0, 32, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_terran.png"), 32, 64, e -> {
+		});
+		guistate.put("button:imagebutton_terran", imagebutton_terran);
+		this.addRenderableWidget(imagebutton_terran);
 	}
 }

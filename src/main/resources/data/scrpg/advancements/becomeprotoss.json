@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "scrpg:protosslogo"
+    },
+    "title": {
+      "translate": "advancements.becomeprotoss.title"
+    },
+    "description": {
+      "translate": "advancements.becomeprotoss.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "becomeprotoss": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

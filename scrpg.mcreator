@@ -213,6 +213,55 @@
         ]
       },
       "path": "~/races/terrans"
+    },
+    {
+      "name": "Protosslogo",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protosslogo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/item/ProtosslogoItem.java",
+          "src/main/resources/assets/scrpg/models/item/protosslogo.json"
+        ]
+      },
+      "path": "~/races/protoss"
+    },
+    {
+      "name": "Becomeprotoss",
+      "type": "achievement",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "becomeprotoss",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/scrpg/advancements/becomeprotoss.json"
+        ]
+      },
+      "path": "~/races/protoss"
+    },
+    {
+      "name": "Startprotoss",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "startprotoss",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/StartprotossProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/races/protoss"
     }
   ],
   "variable_elements": [
@@ -226,13 +275,16 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "advancements.becomeprotoss.title": "Become Protoss!",
       "advancements.become_zerg.title": "Become Zerg!",
       "item.scrpg.terranlogo": "Terranlogo",
+      "advancements.becomeprotoss.descr": "Choose Protoss like your fraction!",
       "advancements.becometerran.title": "Become Terran!",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "key.scrpg.open_stats": "Open Stats",
       "advancements.becometerran.descr": "Choose Terran like your fraction!",
-      "item.scrpg.zerg_logo": "Zerg Logo"
+      "item.scrpg.zerg_logo": "Zerg Logo",
+      "item.scrpg.protosslogo": "Protosslogo"
     }
   },
   "foldersRoot": {

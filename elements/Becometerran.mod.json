@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Become Terran!",
-    "achievementDescription": "Choose terran like your fraction!",
+    "achievementDescription": "Choose Terran like your fraction!",
     "achievementIcon": {
       "value": "CUSTOM:ZergLogo"
     },

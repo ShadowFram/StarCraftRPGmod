@@ -33,6 +33,7 @@
     {
       "name": "BecomeZerg",
       "type": "achievement",
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "become_zerg",
@@ -210,7 +211,10 @@
   "language_map": {
     "en_us": {
       "advancements.become_zerg.title": "Become Zerg!",
+      "advancements.becometerran.title": "Become Terran!",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
+      "key.scrpg.open_stats": "Open Stats",
+      "advancements.becometerran.descr": "Choose Terran like your fraction!",
       "item.scrpg.zerg_logo": "Zerg Logo"
     }
   },

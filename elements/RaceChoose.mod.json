@@ -22,34 +22,24 @@
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_protoss",
-          "image": "protoss.png",
+          "name": "imagebutton_protosslogo",
+          "image": "protosslogo.png",
           "hoveredImage": "",
-          "x": -25,
-          "y": 156
+          "x": 65,
+          "y": 208
         }
       },
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_zerg",
-          "image": "zerg.png",
+          "name": "imagebutton_zerglogo2",
+          "image": "zerglogo2.png",
           "hoveredImage": "",
           "onClick": {
             "name": "StartZerg"
           },
-          "x": 80,
-          "y": 156
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_terrans",
-          "image": "terrans.png",
-          "hoveredImage": "",
-          "x": 171,
-          "y": 158
+          "x": 170,
+          "y": 207
         }
       },
       {
@@ -59,6 +49,19 @@
           "use1Xscale": false,
           "x": 64,
           "y": 206
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_terranlogo",
+          "image": "terranlogo.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Startterran"
+          },
+          "x": 263,
+          "y": 207
         }
       }
     ],

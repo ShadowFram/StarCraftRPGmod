@@ -22,9 +22,9 @@ public class RaceChooseScreen extends AbstractContainerScreen<RaceChooseMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_protoss;
-	ImageButton imagebutton_zerg;
-	ImageButton imagebutton_terrans;
+	ImageButton imagebutton_protosslogo;
+	ImageButton imagebutton_zerglogo2;
+	ImageButton imagebutton_terranlogo;
 
 	public RaceChooseScreen(RaceChooseMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -89,21 +89,25 @@ public class RaceChooseScreen extends AbstractContainerScreen<RaceChooseMenu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_protoss = new ImageButton(this.leftPos + -89, this.topPos + 119, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_protoss.png"), 289, 284, e -> {
+		imagebutton_protosslogo = new ImageButton(this.leftPos + 1, this.topPos + 171, 105, 32, 0, 0, 32, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_protosslogo.png"), 105, 64, e -> {
 		});
-		guistate.put("button:imagebutton_protoss", imagebutton_protoss);
-		this.addRenderableWidget(imagebutton_protoss);
-		imagebutton_zerg = new ImageButton(this.leftPos + 16, this.topPos + 119, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zerg.png"), 289, 284, e -> {
+		guistate.put("button:imagebutton_protosslogo", imagebutton_protosslogo);
+		this.addRenderableWidget(imagebutton_protosslogo);
+		imagebutton_zerglogo2 = new ImageButton(this.leftPos + 106, this.topPos + 170, 98, 32, 0, 0, 32, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zerglogo2.png"), 98, 64, e -> {
 			if (true) {
 				ScrpgMod.PACKET_HANDLER.sendToServer(new RaceChooseButtonMessage(1, x, y, z));
 				RaceChooseButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		});
-		guistate.put("button:imagebutton_zerg", imagebutton_zerg);
-		this.addRenderableWidget(imagebutton_zerg);
-		imagebutton_terrans = new ImageButton(this.leftPos + 107, this.topPos + 121, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_terrans.png"), 289, 284, e -> {
+		guistate.put("button:imagebutton_zerglogo2", imagebutton_zerglogo2);
+		this.addRenderableWidget(imagebutton_zerglogo2);
+		imagebutton_terranlogo = new ImageButton(this.leftPos + 199, this.topPos + 170, 98, 32, 0, 0, 32, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_terranlogo.png"), 98, 64, e -> {
+			if (true) {
+				ScrpgMod.PACKET_HANDLER.sendToServer(new RaceChooseButtonMessage(2, x, y, z));
+				RaceChooseButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		});
-		guistate.put("button:imagebutton_terrans", imagebutton_terrans);
-		this.addRenderableWidget(imagebutton_terrans);
+		guistate.put("button:imagebutton_terranlogo", imagebutton_terranlogo);
+		this.addRenderableWidget(imagebutton_terranlogo);
 	}
 }

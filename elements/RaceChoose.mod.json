@@ -25,7 +25,7 @@
           "name": "imagebutton_protosslogo",
           "image": "protosslogo.png",
           "hoveredImage": "",
-          "x": 65,
+          "x": 67,
           "y": 208
         }
       },
@@ -38,7 +38,7 @@
           "onClick": {
             "name": "StartZerg"
           },
-          "x": 170,
+          "x": 171,
           "y": 207
         }
       },

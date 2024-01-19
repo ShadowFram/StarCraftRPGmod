@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "scrpg:block/protosmetal",
+    "up": "scrpg:block/protosmetal",
+    "north": "scrpg:block/protosmetal",
+    "east": "scrpg:block/protosmetal",
+    "south": "scrpg:block/protosmetal",
+    "west": "scrpg:block/protosmetal",
+    "particle": "scrpg:block/protosmetal"
+  },
+  "render_type": "solid"
+}

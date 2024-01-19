@@ -10,7 +10,6 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.scrpg.block.ZergslimeBlock;
 import net.mcreator.scrpg.block.StellBlockBlock;
 import net.mcreator.scrpg.block.ProtossMetalBlockBlock;
 import net.mcreator.scrpg.block.EnergyBlockBlock;

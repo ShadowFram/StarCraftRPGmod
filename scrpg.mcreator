@@ -298,23 +298,6 @@
       "path": "~/races/protoss"
     },
     {
-      "name": "Zergslime",
-      "type": "block",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "zergslime",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/scrpg/blockstates/zergslime.json",
-          "src/main/java/net/mcreator/scrpg/block/ZergslimeBlock.java",
-          "src/main/resources/assets/scrpg/models/item/zergslime.json",
-          "src/main/resources/assets/scrpg/models/block/zergslime.json"
-        ]
-      },
-      "path": "~/races/zerg"
-    },
-    {
       "name": "Creep",
       "type": "block",
       "sortid": 19,
@@ -361,7 +344,6 @@
   "language_map": {
     "en_us": {
       "advancements.becomeprotoss.title": "Become Protoss!",
-      "block.scrpg.zergslime": "Zergslime",
       "advancements.become_zerg.title": "Become Zerg!",
       "block.scrpg.energy_block": "Enetgy Block",
       "item.scrpg.terranlogo": "Terranlogo",

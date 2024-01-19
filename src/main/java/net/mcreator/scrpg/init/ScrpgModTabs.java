@@ -23,5 +23,11 @@ public class ScrpgModTabs {
 				})
 
 		);
+		event.registerCreativeModeTab(new ResourceLocation("scrpg", "terran"),
+				builder -> builder.title(Component.translatable("item_group.scrpg.terran")).icon(() -> new ItemStack(ScrpgModItems.TERRANLOGO.get())).displayItems((parameters, tabData) -> {
+					tabData.accept(ScrpgModBlocks.STEELBLOCK.get().asItem());
+				})
+
+		);
 	}
 }

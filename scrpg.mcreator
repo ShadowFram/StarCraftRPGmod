@@ -355,6 +355,18 @@
         "files": []
       },
       "path": "~/Other mechanics"
+    },
+    {
+      "name": "Terran",
+      "type": "tab",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terran",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Other mechanics"
     }
   ],
   "variable_elements": [
@@ -367,19 +379,19 @@
     {
       "name": "strength",
       "type": "number",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "1.0"
     },
     {
       "name": "hp",
       "type": "number",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "20.0"
     },
     {
       "name": "speed",
       "type": "number",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "1.0"
     }
   ],
@@ -387,6 +399,7 @@
   "language_map": {
     "en_us": {
       "item_group.scrpg.protoss": "Protoss",
+      "item_group.scrpg.terran": "Terran",
       "advancements.becomeprotoss.title": "Become Protoss!",
       "advancements.become_zerg.title": "Become Zerg!",
       "block.scrpg.energy_block": "Energy Block",

@@ -1,5 +1,6 @@
 package net.mcreator.scrpg.procedures;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
@@ -18,5 +19,7 @@ public class StartterranProcedure {
 					_player.getAdvancements().award(_adv, criteria);
 			}
 		}
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 	}
 }

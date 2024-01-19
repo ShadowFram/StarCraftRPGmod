@@ -112,6 +112,21 @@
           "x": 98,
           "y": 74
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "+",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "AddStats"
+          },
+          "width": 19,
+          "height": 20,
+          "x": 190,
+          "y": 42
+        }
       }
     ],
     "gridSettings": {

@@ -111,6 +111,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/scrpg/world/inventory/StarcraftStatsMenu.java",
+          "src/main/java/net/mcreator/scrpg/network/StarcraftStatsButtonMessage.java",
           "src/main/java/net/mcreator/scrpg/client/gui/StarcraftStatsScreen.java"
         ]
       },
@@ -430,6 +431,26 @@
         ]
       },
       "path": "~/guis"
+    },
+    {
+      "name": "AddStats",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/AddStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/guis"
     }
   ],
   "variable_elements": [
@@ -471,6 +492,7 @@
       "block.scrpg.energy_block": "Energy Block",
       "item.scrpg.terranlogo": "Terranlogo",
       "advancements.becomeprotoss.descr": "Choose Protoss like your fraction!",
+      "gui.scrpg.starcraft_stats.button_empty": "+",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "item.scrpg.zerg_logo": "Zerg Logo",
       "item.scrpg.protosslogo": "Protosslogo",

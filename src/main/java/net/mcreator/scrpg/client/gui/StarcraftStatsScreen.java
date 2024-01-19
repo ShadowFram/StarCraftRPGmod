@@ -7,11 +7,14 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
+import net.minecraft.client.gui.components.Button;
 
 import net.mcreator.scrpg.world.inventory.StarcraftStatsMenu;
 import net.mcreator.scrpg.procedures.StrengthProcedure;
 import net.mcreator.scrpg.procedures.StatspeedProcedure;
 import net.mcreator.scrpg.procedures.StathpProcedure;
+import net.mcreator.scrpg.network.StarcraftStatsButtonMessage;
+import net.mcreator.scrpg.ScrpgMod;
 
 import java.util.HashMap;
 
@@ -23,6 +26,7 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
 	ImageButton imagebutton_zergicon_gui_basic;
 
 	public StarcraftStatsScreen(StarcraftStatsMenu container, Inventory inventory, Component text) {
@@ -93,6 +97,14 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 	@Override
 	public void init() {
 		super.init();
+		button_empty = Button.builder(Component.translatable("gui.scrpg.starcraft_stats.button_empty"), e -> {
+			if (true) {
+				ScrpgMod.PACKET_HANDLER.sendToServer(new StarcraftStatsButtonMessage(0, x, y, z));
+				StarcraftStatsButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}).bounds(this.leftPos + 101, this.topPos + 5, 19, 20).build();
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 		imagebutton_zergicon_gui_basic = new ImageButton(this.leftPos + -31, this.topPos + 4, 32, 32, 0, 0, 32, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zergicon_gui_basic.png"), 32, 64, e -> {
 		});
 		guistate.put("button:imagebutton_zergicon_gui_basic", imagebutton_zergicon_gui_basic);

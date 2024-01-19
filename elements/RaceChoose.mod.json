@@ -15,8 +15,8 @@
         "data": {
           "image": "yn262f88um011_photo-resizer.ru.png",
           "use1Xscale": false,
-          "x": 63,
-          "y": 33
+          "x": 64,
+          "y": 36
         }
       },
       {
@@ -25,8 +25,8 @@
           "name": "imagebutton_protoss",
           "image": "protoss.png",
           "hoveredImage": "",
-          "x": -26,
-          "y": -41
+          "x": -25,
+          "y": 156
         }
       },
       {
@@ -39,7 +39,7 @@
             "name": "StartZerg"
           },
           "x": 80,
-          "y": 151
+          "y": 156
         }
       },
       {
@@ -48,8 +48,17 @@
           "name": "imagebutton_terrans",
           "image": "terrans.png",
           "hoveredImage": "",
-          "x": 167,
-          "y": -42
+          "x": 171,
+          "y": 158
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ui_down.png",
+          "use1Xscale": false,
+          "x": 64,
+          "y": 206
         }
       }
     ],

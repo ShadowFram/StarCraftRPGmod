@@ -55,7 +55,10 @@ public class RaceChooseScreen extends AbstractContainerScreen<RaceChooseMenu> {
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("scrpg:textures/screens/yn262f88um011_photo-resizer.ru.png"));
-		this.blit(ms, this.leftPos + -1, this.topPos + -4, 0, 0, 300, 169, 300, 169);
+		this.blit(ms, this.leftPos + 0, this.topPos + -1, 0, 0, 300, 169, 300, 169);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("scrpg:textures/screens/ui_down.png"));
+		this.blit(ms, this.leftPos + 0, this.topPos + 169, 0, 0, 300, 40, 300, 40);
 
 		RenderSystem.disableBlend();
 	}
@@ -86,11 +89,11 @@ public class RaceChooseScreen extends AbstractContainerScreen<RaceChooseMenu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_protoss = new ImageButton(this.leftPos + -90, this.topPos + -78, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_protoss.png"), 289, 284, e -> {
+		imagebutton_protoss = new ImageButton(this.leftPos + -89, this.topPos + 119, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_protoss.png"), 289, 284, e -> {
 		});
 		guistate.put("button:imagebutton_protoss", imagebutton_protoss);
 		this.addRenderableWidget(imagebutton_protoss);
-		imagebutton_zerg = new ImageButton(this.leftPos + 16, this.topPos + 114, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zerg.png"), 289, 284, e -> {
+		imagebutton_zerg = new ImageButton(this.leftPos + 16, this.topPos + 119, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zerg.png"), 289, 284, e -> {
 			if (true) {
 				ScrpgMod.PACKET_HANDLER.sendToServer(new RaceChooseButtonMessage(1, x, y, z));
 				RaceChooseButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -98,7 +101,7 @@ public class RaceChooseScreen extends AbstractContainerScreen<RaceChooseMenu> {
 		});
 		guistate.put("button:imagebutton_zerg", imagebutton_zerg);
 		this.addRenderableWidget(imagebutton_zerg);
-		imagebutton_terrans = new ImageButton(this.leftPos + 103, this.topPos + -79, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_terrans.png"), 289, 284, e -> {
+		imagebutton_terrans = new ImageButton(this.leftPos + 107, this.topPos + 121, 289, 142, 0, 0, 142, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_terrans.png"), 289, 284, e -> {
 		});
 		guistate.put("button:imagebutton_terrans", imagebutton_terrans);
 		this.addRenderableWidget(imagebutton_terrans);

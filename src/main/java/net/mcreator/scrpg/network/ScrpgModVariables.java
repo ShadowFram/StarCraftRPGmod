@@ -88,6 +88,9 @@ public class ScrpgModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "scrpg_mapvars";
 		public boolean ChooseFraction = false;
+		public double strength = 1.0;
+		public double hp = 20.0;
+		public double speed = 1.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -97,11 +100,17 @@ public class ScrpgModVariables {
 
 		public void read(CompoundTag nbt) {
 			ChooseFraction = nbt.getBoolean("ChooseFraction");
+			strength = nbt.getDouble("strength");
+			hp = nbt.getDouble("hp");
+			speed = nbt.getDouble("speed");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("ChooseFraction", ChooseFraction);
+			nbt.putDouble("strength", strength);
+			nbt.putDouble("hp", hp);
+			nbt.putDouble("speed", speed);
 			return nbt;
 		}
 

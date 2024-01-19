@@ -330,6 +330,30 @@
         ]
       },
       "path": "~/races/terrans"
+    },
+    {
+      "name": "Protoss",
+      "type": "tab",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protoss",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Other mechanics"
+    },
+    {
+      "name": "Zerg",
+      "type": "tab",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zerg",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Other mechanics"
     }
   ],
   "variable_elements": [
@@ -338,6 +362,24 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "strength",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
+    },
+    {
+      "name": "hp",
+      "type": "number",
+      "scope": "map",
+      "value": "20.0"
+    },
+    {
+      "name": "speed",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
     }
   ],
   "sound_elements": [],
@@ -352,6 +394,7 @@
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "item.scrpg.zerg_logo": "Zerg Logo",
       "item.scrpg.protosslogo": "Protosslogo",
+      "gui.scrpg.starcraft_stats.label_varstrength": "\u003cVAR:strength\u003e",
       "block.scrpg.steelblock": "Steel Block",
       "block.scrpg.creep": "Creep",
       "advancements.becometerran.title": "Become Terran!",

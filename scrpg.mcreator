@@ -19,6 +19,7 @@
     {
       "name": "ZergLogo",
       "type": "item",
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zerg_logo",
@@ -260,7 +261,10 @@
   "language_map": {
     "en_us": {
       "advancements.become_zerg.title": "Become Zerg!",
+      "block.scrpg.energy_block": "Enetgy Block",
+      "item.scrpg.terranlogo": "Terranlogo",
       "advancements.becometerran.title": "Become Terran!",
+      "block.scrpg.protoss_metal_block": "Protoss Metal Block",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "key.scrpg.open_stats": "Open Stats",
       "advancements.becometerran.descr": "Choose Terran like your fraction!",

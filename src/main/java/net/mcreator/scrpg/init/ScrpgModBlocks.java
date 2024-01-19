@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.scrpg.block.ZergslimeBlock;
+import net.mcreator.scrpg.block.StellBlockBlock;
 import net.mcreator.scrpg.block.ProtossMetalBlockBlock;
 import net.mcreator.scrpg.block.EnergyBlockBlock;
 import net.mcreator.scrpg.block.CreepBlock;
@@ -22,4 +23,5 @@ public class ScrpgModBlocks {
 	public static final RegistryObject<Block> ENERGY_BLOCK = REGISTRY.register("energy_block", () -> new EnergyBlockBlock());
 	public static final RegistryObject<Block> ZERGSLIME = REGISTRY.register("zergslime", () -> new ZergslimeBlock());
 	public static final RegistryObject<Block> CREEP = REGISTRY.register("creep", () -> new CreepBlock());
+	public static final RegistryObject<Block> STELL_BLOCK = REGISTRY.register("stell_block", () -> new StellBlockBlock());
 }

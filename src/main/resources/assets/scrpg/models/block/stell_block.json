@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "scrpg:block/stellblockup",
+    "up": "scrpg:block/stellblockup",
+    "north": "scrpg:block/stellblock",
+    "east": "scrpg:block/stellblock",
+    "south": "scrpg:block/stellblock",
+    "west": "scrpg:block/stellblock",
+    "particle": "scrpg:block/stellblockup"
+  },
+  "render_type": "solid"
+}

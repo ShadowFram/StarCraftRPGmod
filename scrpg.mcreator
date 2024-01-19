@@ -330,6 +330,23 @@
         ]
       },
       "path": "~/races/zerg"
+    },
+    {
+      "name": "StellBlock",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stell_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/block/StellBlockBlock.java",
+          "src/main/resources/assets/scrpg/blockstates/stell_block.json",
+          "src/main/resources/assets/scrpg/models/item/stell_block.json",
+          "src/main/resources/assets/scrpg/models/block/stell_block.json"
+        ]
+      },
+      "path": "~/races/terrans"
     }
   ],
   "variable_elements": [
@@ -352,6 +369,7 @@
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "item.scrpg.zerg_logo": "Zerg Logo",
       "item.scrpg.protosslogo": "Protosslogo",
+      "block.scrpg.stell_block": "Stell Block",
       "block.scrpg.creep": "Creep",
       "advancements.becometerran.title": "Become Terran!",
       "block.scrpg.protoss_metal_block": "Protoss Metal Block",

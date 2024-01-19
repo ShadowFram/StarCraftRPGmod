@@ -26,7 +26,7 @@
           "name": "label_proc_strength",
           "text": {
             "fixedValue": "",
-            "name": "Strength"
+            "name": "StatStrength"
           },
           "color": {
             "value": -12829636,

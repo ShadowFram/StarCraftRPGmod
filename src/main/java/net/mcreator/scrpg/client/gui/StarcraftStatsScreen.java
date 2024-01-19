@@ -9,7 +9,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.scrpg.world.inventory.StarcraftStatsMenu;
-import net.mcreator.scrpg.procedures.StrengthProcedure;
+import net.mcreator.scrpg.procedures.StatStrengthProcedure;
 
 import java.util.HashMap;
 
@@ -71,7 +71,7 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack,
 
-				StrengthProcedure.execute(world), 9, 7, -12829636);
+				StatStrengthProcedure.execute(entity), 9, 7, -12829636);
 	}
 
 	@Override

@@ -209,10 +209,10 @@
       "registry_name": "energy_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/scrpg/models/item/energy_block.json",
           "src/main/resources/assets/scrpg/models/block/energy_block.json",
+          "src/main/resources/assets/scrpg/blockstates/energy_block.json",
           "src/main/java/net/mcreator/scrpg/block/EnergyBlockBlock.java",
-          "src/main/resources/assets/scrpg/blockstates/energy_block.json"
+          "src/main/resources/assets/scrpg/models/item/energy_block.json"
         ]
       },
       "path": "~/races/protoss"
@@ -226,10 +226,10 @@
       "registry_name": "protoss_metal_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/scrpg/block/ProtossMetalBlockBlock.java",
-          "src/main/resources/assets/scrpg/blockstates/protoss_metal_block.json",
           "src/main/resources/assets/scrpg/models/item/protoss_metal_block.json",
-          "src/main/resources/assets/scrpg/models/block/protoss_metal_block.json"
+          "src/main/resources/assets/scrpg/blockstates/protoss_metal_block.json",
+          "src/main/resources/assets/scrpg/models/block/protoss_metal_block.json",
+          "src/main/java/net/mcreator/scrpg/block/ProtossMetalBlockBlock.java"
         ]
       },
       "path": "~/races/protoss"
@@ -292,8 +292,8 @@
       "registry_name": "protosslogo",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/scrpg/item/ProtosslogoItem.java",
-          "src/main/resources/assets/scrpg/models/item/protosslogo.json"
+          "src/main/resources/assets/scrpg/models/item/protosslogo.json",
+          "src/main/java/net/mcreator/scrpg/item/ProtosslogoItem.java"
         ]
       },
       "path": "~/races/protoss"
@@ -369,21 +369,21 @@
       "path": "~/Other mechanics"
     },
     {
-      "name": "Strength",
+      "name": "StatStrength",
       "type": "procedure",
-      "sortid": 24,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "strength",
+      "registry_name": "stat_strength",
       "metadata": {
         "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/scrpg/procedures/StrengthProcedure.java"
+          "src/main/java/net/mcreator/scrpg/procedures/StatStrengthProcedure.java"
         ],
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },

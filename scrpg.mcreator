@@ -209,10 +209,10 @@
       "registry_name": "energy_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/scrpg/models/item/energy_block.json",
           "src/main/resources/assets/scrpg/models/block/energy_block.json",
+          "src/main/resources/assets/scrpg/blockstates/energy_block.json",
           "src/main/java/net/mcreator/scrpg/block/EnergyBlockBlock.java",
-          "src/main/resources/assets/scrpg/blockstates/energy_block.json"
+          "src/main/resources/assets/scrpg/models/item/energy_block.json"
         ]
       },
       "path": "~/races/protoss"
@@ -226,10 +226,10 @@
       "registry_name": "protoss_metal_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/scrpg/block/ProtossMetalBlockBlock.java",
-          "src/main/resources/assets/scrpg/blockstates/protoss_metal_block.json",
           "src/main/resources/assets/scrpg/models/item/protoss_metal_block.json",
-          "src/main/resources/assets/scrpg/models/block/protoss_metal_block.json"
+          "src/main/resources/assets/scrpg/blockstates/protoss_metal_block.json",
+          "src/main/resources/assets/scrpg/models/block/protoss_metal_block.json",
+          "src/main/java/net/mcreator/scrpg/block/ProtossMetalBlockBlock.java"
         ]
       },
       "path": "~/races/protoss"
@@ -292,8 +292,8 @@
       "registry_name": "protosslogo",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/scrpg/item/ProtosslogoItem.java",
-          "src/main/resources/assets/scrpg/models/item/protosslogo.json"
+          "src/main/resources/assets/scrpg/models/item/protosslogo.json",
+          "src/main/java/net/mcreator/scrpg/item/ProtosslogoItem.java"
         ]
       },
       "path": "~/races/protoss"
@@ -382,8 +382,8 @@
         ],
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -421,6 +421,7 @@
     "en_us": {
       "item_group.scrpg.protoss": "Protoss",
       "item_group.scrpg.terran": "Terran",
+      "gui.scrpg.starcraft_stats.label_strenght": "strength:",
       "advancements.becomeprotoss.title": "Become Protoss!",
       "advancements.become_zerg.title": "Become Zerg!",
       "block.scrpg.energy_block": "Energy Block",

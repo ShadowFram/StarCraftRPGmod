@@ -119,6 +119,7 @@
     {
       "name": "OpenStats",
       "type": "keybind",
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_stats",
@@ -385,7 +386,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "gui.scrpg.starcraft_stats.label_varbolean": "\u003cVAR:ChooseFraction\u003e",
+      "item_group.scrpg.protoss": "Protoss",
+      "gui.scrpg.starcraft_stats.label_varbolean": "\u003cBNBT:Integer:strength\u003e",
       "advancements.becomeprotoss.title": "Become Protoss!",
       "advancements.become_zerg.title": "Become Zerg!",
       "block.scrpg.energy_block": "Energy Block",
@@ -399,6 +401,7 @@
       "block.scrpg.creep": "Creep",
       "advancements.becometerran.title": "Become Terran!",
       "block.scrpg.protoss_metal_block": "Protoss Metal Block",
+      "item_group.scrpg.zerg": "Zerg",
       "key.scrpg.open_stats": "Open Stats",
       "advancements.becometerran.descr": "Choose Terran like your fraction!"
     }

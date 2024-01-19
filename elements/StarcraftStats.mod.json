@@ -25,7 +25,7 @@
         "data": {
           "name": "label_varbolean",
           "text": {
-            "fixedValue": "<VAR:ChooseFraction>"
+            "fixedValue": "<BNBT:Integer:strength>"
           },
           "color": {
             "value": -12829636,

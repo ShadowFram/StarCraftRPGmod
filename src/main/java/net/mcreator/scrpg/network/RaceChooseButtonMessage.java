@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.scrpg.world.inventory.RaceChooseMenu;
+import net.mcreator.scrpg.procedures.StartterranProcedure;
 import net.mcreator.scrpg.procedures.StartZergProcedure;
 import net.mcreator.scrpg.ScrpgMod;
 
@@ -65,6 +66,10 @@ public class RaceChooseButtonMessage {
 		if (buttonID == 1) {
 
 			StartZergProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			StartterranProcedure.execute(entity);
 		}
 	}
 

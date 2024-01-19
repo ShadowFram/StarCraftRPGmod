@@ -19,6 +19,21 @@
           "x": 58,
           "y": 41
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_varstrength",
+          "text": {
+            "fixedValue": "<VAR:strength>"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 184,
+          "y": 55
+        }
       }
     ],
     "gridSettings": {

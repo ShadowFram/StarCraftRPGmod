@@ -1,4 +1,5 @@
 {
+  "item_group.scrpg.protoss": "Protoss",
   "advancements.becomeprotoss.title": "Become Protoss!",
   "advancements.become_zerg.title": "Become Zerg!",
   "block.scrpg.energy_block": "Energy Block",
@@ -7,10 +8,12 @@
   "advancements.become_zerg.descr": "Choose zerg like your fraction!",
   "item.scrpg.zerg_logo": "Zerg Logo",
   "item.scrpg.protosslogo": "Protosslogo",
+  "gui.scrpg.starcraft_stats.label_varstrength": "\u003cVAR:strength\u003e",
   "block.scrpg.steelblock": "Steel Block",
   "block.scrpg.creep": "Creep",
   "advancements.becometerran.title": "Become Terran!",
   "block.scrpg.protoss_metal_block": "Protoss Metal Block",
+  "item_group.scrpg.zerg": "Zerg",
   "key.scrpg.open_stats": "Open Stats",
   "advancements.becometerran.descr": "Choose Terran like your fraction!"
 }

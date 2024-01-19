@@ -119,6 +119,7 @@
     {
       "name": "OpenStats",
       "type": "keybind",
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_stats",
@@ -208,10 +209,10 @@
       "registry_name": "energy_block",
       "metadata": {
         "files": [
+          "src/main/resources/assets/scrpg/models/item/energy_block.json",
           "src/main/resources/assets/scrpg/models/block/energy_block.json",
-          "src/main/resources/assets/scrpg/blockstates/energy_block.json",
           "src/main/java/net/mcreator/scrpg/block/EnergyBlockBlock.java",
-          "src/main/resources/assets/scrpg/models/item/energy_block.json"
+          "src/main/resources/assets/scrpg/blockstates/energy_block.json"
         ]
       },
       "path": "~/races/protoss"
@@ -225,10 +226,10 @@
       "registry_name": "protoss_metal_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/scrpg/models/item/protoss_metal_block.json",
+          "src/main/java/net/mcreator/scrpg/block/ProtossMetalBlockBlock.java",
           "src/main/resources/assets/scrpg/blockstates/protoss_metal_block.json",
-          "src/main/resources/assets/scrpg/models/block/protoss_metal_block.json",
-          "src/main/java/net/mcreator/scrpg/block/ProtossMetalBlockBlock.java"
+          "src/main/resources/assets/scrpg/models/item/protoss_metal_block.json",
+          "src/main/resources/assets/scrpg/models/block/protoss_metal_block.json"
         ]
       },
       "path": "~/races/protoss"
@@ -330,6 +331,30 @@
         ]
       },
       "path": "~/races/terrans"
+    },
+    {
+      "name": "Zerg",
+      "type": "tab",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zerg",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Other mechanics"
+    },
+    {
+      "name": "Protoss",
+      "type": "tab",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protoss",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Other mechanics"
     }
   ],
   "variable_elements": [
@@ -338,11 +363,30 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "strength",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
+    },
+    {
+      "name": "hp",
+      "type": "number",
+      "scope": "map",
+      "value": "20.0"
+    },
+    {
+      "name": "speed",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item_group.scrpg.protoss": "Protoss",
       "advancements.becomeprotoss.title": "Become Protoss!",
       "advancements.become_zerg.title": "Become Zerg!",
       "block.scrpg.energy_block": "Energy Block",
@@ -351,10 +395,12 @@
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "item.scrpg.zerg_logo": "Zerg Logo",
       "item.scrpg.protosslogo": "Protosslogo",
+      "gui.scrpg.starcraft_stats.label_varstrength": "\u003cVAR:strength\u003e",
       "block.scrpg.steelblock": "Steel Block",
       "block.scrpg.creep": "Creep",
       "advancements.becometerran.title": "Become Terran!",
       "block.scrpg.protoss_metal_block": "Protoss Metal Block",
+      "item_group.scrpg.zerg": "Zerg",
       "key.scrpg.open_stats": "Open Stats",
       "advancements.becometerran.descr": "Choose Terran like your fraction!"
     }

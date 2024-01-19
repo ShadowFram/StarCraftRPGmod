@@ -71,7 +71,7 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack,
 
-				StrengthProcedure.execute(entity), 59, 11, -12829636);
+				StrengthProcedure.execute(entity), 56, 10, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_strenght"), 9, 10, -12829636);
 	}
 

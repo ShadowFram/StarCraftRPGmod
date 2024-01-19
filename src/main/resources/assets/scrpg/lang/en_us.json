@@ -1,7 +1,7 @@
 {
   "item_group.scrpg.protoss": "Protoss",
   "item_group.scrpg.terran": "Terran",
-  "gui.scrpg.starcraft_stats.label_strenght": "strength:",
+  "gui.scrpg.starcraft_stats.label_strenght": "Strength:",
   "advancements.becomeprotoss.title": "Become Protoss!",
   "advancements.become_zerg.title": "Become Zerg!",
   "block.scrpg.energy_block": "Energy Block",

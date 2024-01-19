@@ -32,8 +32,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 148,
-          "y": 48
+          "x": 145,
+          "y": 47
         }
       },
       {
@@ -41,7 +41,7 @@
         "data": {
           "name": "label_strenght",
           "text": {
-            "fixedValue": "strength:"
+            "fixedValue": "Strength:"
           },
           "color": {
             "value": -12829636,

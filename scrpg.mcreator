@@ -463,19 +463,19 @@
     {
       "name": "strength",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "1.0"
     },
     {
       "name": "hp",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "20.0"
     },
     {
       "name": "speed",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "1.0"
     }
   ],

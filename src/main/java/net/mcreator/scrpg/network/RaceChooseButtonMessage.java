@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.scrpg.world.inventory.RaceChooseMenu;
 import net.mcreator.scrpg.procedures.StartterranProcedure;
+import net.mcreator.scrpg.procedures.StartprotossProcedure;
 import net.mcreator.scrpg.procedures.StartZergProcedure;
 import net.mcreator.scrpg.ScrpgMod;
 
@@ -63,6 +64,10 @@ public class RaceChooseButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+
+			StartprotossProcedure.execute(entity);
+		}
 		if (buttonID == 1) {
 
 			StartZergProcedure.execute(entity);

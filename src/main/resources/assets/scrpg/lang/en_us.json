@@ -1,8 +1,14 @@
 {
+  "advancements.becomeprotoss.title": "Become Protoss!",
   "advancements.become_zerg.title": "Become Zerg!",
-  "advancements.becometerran.title": "Become Terran!",
+  "block.scrpg.energy_block": "Enetgy Block",
+  "item.scrpg.terranlogo": "Terranlogo",
+  "advancements.becomeprotoss.descr": "Choose Protoss like your fraction!",
   "advancements.become_zerg.descr": "Choose zerg like your fraction!",
+  "item.scrpg.zerg_logo": "Zerg Logo",
+  "item.scrpg.protosslogo": "Protosslogo",
+  "advancements.becometerran.title": "Become Terran!",
+  "block.scrpg.protoss_metal_block": "Protoss Metal Block",
   "key.scrpg.open_stats": "Open Stats",
-  "advancements.becometerran.descr": "Choose Terran like your fraction!",
-  "item.scrpg.zerg_logo": "Zerg Logo"
+  "advancements.becometerran.descr": "Choose Terran like your fraction!"
 }

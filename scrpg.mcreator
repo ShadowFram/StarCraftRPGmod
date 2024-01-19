@@ -19,7 +19,6 @@
     {
       "name": "ZergLogo",
       "type": "item",
-      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zerg_logo",
@@ -200,6 +199,23 @@
       "path": "~/races/terrans"
     },
     {
+      "name": "EnergyBlock",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/scrpg/models/block/energy_block.json",
+          "src/main/resources/assets/scrpg/blockstates/energy_block.json",
+          "src/main/java/net/mcreator/scrpg/block/EnergyBlockBlock.java",
+          "src/main/resources/assets/scrpg/models/item/energy_block.json"
+        ]
+      },
+      "path": "~/races/protoss"
+    },
+    {
       "name": "ProtossMetalBlock",
       "type": "block",
       "sortid": 10,
@@ -217,21 +233,19 @@
       "path": "~/races/protoss"
     },
     {
-      "name": "EnergyBlock",
-      "type": "block",
-      "sortid": 12,
+      "name": "Terranlogo",
+      "type": "item",
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "energy_block",
+      "registry_name": "terranlogo",
       "metadata": {
         "files": [
-          "src/main/resources/assets/scrpg/models/block/energy_block.json",
-          "src/main/resources/assets/scrpg/blockstates/energy_block.json",
-          "src/main/java/net/mcreator/scrpg/block/EnergyBlockBlock.java",
-          "src/main/resources/assets/scrpg/models/item/energy_block.json"
+          "src/main/resources/assets/scrpg/models/item/terranlogo.json",
+          "src/main/java/net/mcreator/scrpg/item/TerranlogoItem.java"
         ]
       },
-      "path": "~/races/protoss"
+      "path": "~/races/terrans"
     }
   ],
   "variable_elements": [
@@ -246,9 +260,7 @@
   "language_map": {
     "en_us": {
       "advancements.become_zerg.title": "Become Zerg!",
-      "block.scrpg.energy_block": "Enetgy Block",
       "advancements.becometerran.title": "Become Terran!",
-      "block.scrpg.protoss_metal_block": "Protoss Metal Block",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "key.scrpg.open_stats": "Open Stats",
       "advancements.becometerran.descr": "Choose Terran like your fraction!",

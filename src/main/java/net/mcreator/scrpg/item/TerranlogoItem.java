@@ -4,8 +4,8 @@ package net.mcreator.scrpg.item;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import javax.annotation.Nullable;
 
-public class ZergLogoItem extends Item {
-	public ZergLogoItem() {
+public class TerranlogoItem extends Item {
+	public TerranlogoItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
 	}
 

@@ -19,6 +19,7 @@
     {
       "name": "ZergLogo",
       "type": "item",
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zerg_logo",
@@ -308,15 +309,18 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "advancements.becomeprotoss.title": "Become Protoss!",
       "advancements.become_zerg.title": "Become Zerg!",
       "block.scrpg.energy_block": "Enetgy Block",
       "item.scrpg.terranlogo": "Terranlogo",
+      "advancements.becomeprotoss.descr": "Choose Protoss like your fraction!",
+      "advancements.become_zerg.descr": "Choose zerg like your fraction!",
+      "item.scrpg.zerg_logo": "Zerg Logo",
+      "item.scrpg.protosslogo": "Protosslogo",
       "advancements.becometerran.title": "Become Terran!",
       "block.scrpg.protoss_metal_block": "Protoss Metal Block",
-      "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "key.scrpg.open_stats": "Open Stats",
-      "advancements.becometerran.descr": "Choose Terran like your fraction!",
-      "item.scrpg.zerg_logo": "Zerg Logo"
+      "advancements.becometerran.descr": "Choose Terran like your fraction!"
     }
   },
   "foldersRoot": {

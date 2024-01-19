@@ -5,7 +5,7 @@
     "achievementName": "Become Terran!",
     "achievementDescription": "Choose terran like your fraction!",
     "achievementIcon": {
-      "value": "CUSTOM:ZergLogo"
+      "value": "CUSTOM:Terranlogo"
     },
     "background": "Default",
     "disableDisplay": false,

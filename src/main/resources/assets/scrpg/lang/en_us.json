@@ -1,5 +1,9 @@
 {
   "advancements.become_zerg.title": "Become Zerg!",
+  "item.scrpg.terranlogo": "Terranlogo",
+  "advancements.becometerran.title": "Become Terran!",
   "advancements.become_zerg.descr": "Choose zerg like your fraction!",
+  "key.scrpg.open_stats": "Open Stats",
+  "advancements.becometerran.descr": "Choose terran like your fraction!",
   "item.scrpg.zerg_logo": "Zerg Logo"
 }

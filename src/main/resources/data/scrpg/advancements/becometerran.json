@@ -2,7 +2,7 @@
   "display": {
     "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "item": "scrpg:zerg_logo"
+      "item": "scrpg:terranlogo"
     },
     "title": {
       "translate": "advancements.becometerran.title"

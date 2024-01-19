@@ -90,6 +90,10 @@ public class RaceChooseScreen extends AbstractContainerScreen<RaceChooseMenu> {
 	public void init() {
 		super.init();
 		imagebutton_protosslogo = new ImageButton(this.leftPos + 3, this.topPos + 171, 105, 32, 0, 0, 32, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_protosslogo.png"), 105, 64, e -> {
+			if (true) {
+				ScrpgMod.PACKET_HANDLER.sendToServer(new RaceChooseButtonMessage(0, x, y, z));
+				RaceChooseButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_protosslogo", imagebutton_protosslogo);
 		this.addRenderableWidget(imagebutton_protosslogo);

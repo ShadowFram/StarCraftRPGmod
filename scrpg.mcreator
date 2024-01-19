@@ -19,7 +19,6 @@
     {
       "name": "ZergLogo",
       "type": "item",
-      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zerg_logo",
@@ -247,6 +246,55 @@
         ]
       },
       "path": "~/races/terrans"
+    },
+    {
+      "name": "Startprotoss",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "startprotoss",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/StartprotossProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/races/protoss"
+    },
+    {
+      "name": "Becomeprotoss",
+      "type": "achievement",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "becomeprotoss",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/scrpg/advancements/becomeprotoss.json"
+        ]
+      },
+      "path": "~/races/protoss"
+    },
+    {
+      "name": "Protosslogo",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protosslogo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/scrpg/models/item/protosslogo.json",
+          "src/main/java/net/mcreator/scrpg/item/ProtosslogoItem.java"
+        ]
+      },
+      "path": "~/races/protoss"
     }
   ],
   "variable_elements": [

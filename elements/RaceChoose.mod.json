@@ -25,6 +25,9 @@
           "name": "imagebutton_protosslogo",
           "image": "protosslogo.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "Startprotoss"
+          },
           "x": 67,
           "y": 208
         }

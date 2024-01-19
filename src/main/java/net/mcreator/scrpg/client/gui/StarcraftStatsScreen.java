@@ -9,6 +9,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.scrpg.world.inventory.StarcraftStatsMenu;
+import net.mcreator.scrpg.procedures.StrengthProcedure;
 
 import java.util.HashMap;
 
@@ -68,7 +69,9 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_varbolean"), 6, 6, -12829636);
+		this.font.draw(poseStack,
+
+				StrengthProcedure.execute(world), 9, 7, -12829636);
 	}
 
 	@Override

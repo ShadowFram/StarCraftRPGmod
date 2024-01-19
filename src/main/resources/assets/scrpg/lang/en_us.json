@@ -1,6 +1,6 @@
 {
   "item_group.scrpg.protoss": "Protoss",
-  "gui.scrpg.starcraft_stats.label_varbolean": "\u003cBNBT:Integer:strength\u003e",
+  "gui.scrpg.starcraft_stats.label_varbolean": "\u003cBNBT:integer:strength\u003e",
   "advancements.becomeprotoss.title": "Become Protoss!",
   "advancements.become_zerg.title": "Become Zerg!",
   "block.scrpg.energy_block": "Energy Block",

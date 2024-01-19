@@ -115,6 +115,19 @@
       "path": "~/guis"
     },
     {
+      "name": "OpenStats",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/network/OpenStatsMessage.java"
+        ]
+      },
+      "path": "~/Other mechanics"
+    },
+    {
       "name": "OpenStatspROC",
       "type": "procedure",
       "sortid": 5,
@@ -151,17 +164,38 @@
       "path": "~/Other mechanics"
     },
     {
-      "name": "OpenStats",
-      "type": "keybind",
+      "name": "Becometerran",
+      "type": "achievement",
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "open_stats",
+      "registry_name": "becometerran",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/scrpg/network/OpenStatsMessage.java"
+          "src/main/resources/data/scrpg/advancements/becometerran.json"
         ]
       },
-      "path": "~/Other mechanics"
+      "path": "~/races/terrans"
+    },
+    {
+      "name": "Startterran",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "startterran",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/StartterranProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/races/terrans"
     }
   ],
   "variable_elements": [
@@ -177,7 +211,6 @@
     "en_us": {
       "advancements.become_zerg.title": "Become Zerg!",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
-      "key.scrpg.open_stats": "Open Stats",
       "item.scrpg.zerg_logo": "Zerg Logo"
     }
   },
@@ -192,15 +225,15 @@
         "name": "races",
         "children": [
           {
+            "name": "terrans",
+            "children": []
+          },
+          {
             "name": "protoss",
             "children": []
           },
           {
             "name": "zerg",
-            "children": []
-          },
-          {
-            "name": "terrans",
             "children": []
           }
         ]

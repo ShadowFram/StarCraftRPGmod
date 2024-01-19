@@ -19,6 +19,21 @@
           "x": 58,
           "y": 41
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_varbolean",
+          "text": {
+            "fixedValue": "<VAR:ChooseFraction>"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 95,
+          "y": 43
+        }
       }
     ],
     "gridSettings": {

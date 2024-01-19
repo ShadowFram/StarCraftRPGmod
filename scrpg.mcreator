@@ -343,6 +343,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "gui.scrpg.starcraft_stats.label_varbolean": "\u003cVAR:ChooseFraction\u003e",
       "advancements.becomeprotoss.title": "Become Protoss!",
       "advancements.become_zerg.title": "Become Zerg!",
       "block.scrpg.energy_block": "Energy Block",

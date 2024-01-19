@@ -68,6 +68,7 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_varbolean"), 6, 6, -12829636);
 	}
 
 	@Override

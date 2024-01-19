@@ -25,6 +25,7 @@ public class ScrpgModItems {
 	public static final RegistryObject<Item> PROTOSSLOGO = REGISTRY.register("protosslogo", () -> new ProtosslogoItem());
 	public static final RegistryObject<Item> ZERGSLIME = block(ScrpgModBlocks.ZERGSLIME);
 	public static final RegistryObject<Item> ZERG_LOGO = REGISTRY.register("zerg_logo", () -> new ZergLogoItem());
+	public static final RegistryObject<Item> CREEP = block(ScrpgModBlocks.CREEP);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

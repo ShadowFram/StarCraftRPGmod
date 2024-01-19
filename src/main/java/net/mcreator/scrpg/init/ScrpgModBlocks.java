@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.scrpg.block.ZergslimeBlock;
 import net.mcreator.scrpg.block.ProtossMetalBlockBlock;
 import net.mcreator.scrpg.block.EnergyBlockBlock;
+import net.mcreator.scrpg.block.CreepBlock;
 import net.mcreator.scrpg.ScrpgMod;
 
 public class ScrpgModBlocks {
@@ -20,4 +21,5 @@ public class ScrpgModBlocks {
 	public static final RegistryObject<Block> PROTOSS_METAL_BLOCK = REGISTRY.register("protoss_metal_block", () -> new ProtossMetalBlockBlock());
 	public static final RegistryObject<Block> ENERGY_BLOCK = REGISTRY.register("energy_block", () -> new EnergyBlockBlock());
 	public static final RegistryObject<Block> ZERGSLIME = REGISTRY.register("zergslime", () -> new ZergslimeBlock());
+	public static final RegistryObject<Block> CREEP = REGISTRY.register("creep", () -> new CreepBlock());
 }

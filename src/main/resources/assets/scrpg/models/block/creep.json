@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "scrpg:block/creep_animated",
+    "up": "scrpg:block/creep_animated",
+    "north": "scrpg:block/creep_animated",
+    "east": "scrpg:block/creep_animated",
+    "south": "scrpg:block/creep_animated",
+    "west": "scrpg:block/creep_animated",
+    "particle": "scrpg:block/creep_animated"
+  },
+  "render_type": "solid"
+}

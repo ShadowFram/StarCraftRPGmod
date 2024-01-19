@@ -19,6 +19,7 @@
     {
       "name": "ZergLogo",
       "type": "item",
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zerg_logo",
@@ -312,6 +313,23 @@
         ]
       },
       "path": "~/races/zerg"
+    },
+    {
+      "name": "Creep",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creep",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/scrpg/blockstates/creep.json",
+          "src/main/resources/assets/scrpg/models/block/creep.json",
+          "src/main/java/net/mcreator/scrpg/block/CreepBlock.java",
+          "src/main/resources/assets/scrpg/models/item/creep.json"
+        ]
+      },
+      "path": "~/races/zerg"
     }
   ],
   "variable_elements": [
@@ -326,6 +344,7 @@
   "language_map": {
     "en_us": {
       "advancements.becomeprotoss.title": "Become Protoss!",
+      "block.scrpg.zergslime": "Zergslime",
       "advancements.become_zerg.title": "Become Zerg!",
       "block.scrpg.energy_block": "Enetgy Block",
       "item.scrpg.terranlogo": "Terranlogo",
@@ -333,6 +352,7 @@
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "item.scrpg.zerg_logo": "Zerg Logo",
       "item.scrpg.protosslogo": "Protosslogo",
+      "block.scrpg.creep": "Creep",
       "advancements.becometerran.title": "Become Terran!",
       "block.scrpg.protoss_metal_block": "Protoss Metal Block",
       "key.scrpg.open_stats": "Open Stats",

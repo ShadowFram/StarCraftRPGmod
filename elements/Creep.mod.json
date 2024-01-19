@@ -2,15 +2,15 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "energyblock",
-    "textureTop": "energyblock",
-    "textureLeft": "energyblock",
-    "textureFront": "energyblock",
-    "textureRight": "energyblock",
-    "textureBack": "energyblock",
+    "texture": "creep_animated",
+    "textureTop": "creep_animated",
+    "textureLeft": "creep_animated",
+    "textureFront": "creep_animated",
+    "textureRight": "creep_animated",
+    "textureBack": "creep_animated",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 5,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -33,12 +33,12 @@
         "subtract": false
       }
     ],
-    "name": "Enetgy Block",
+    "name": "Creep",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 5.0,
-    "resistance": 20.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -46,7 +46,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -56,7 +56,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "LEAVES"
+      "value": "CLOTH"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -71,8 +71,8 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
-    "fireSpreadSpeed": 0,
+    "flammability": 1,
+    "fireSpreadSpeed": 1,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
@@ -81,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "SLIME"
     },
     "breakSound": {
       "value": ""
@@ -98,7 +98,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 7,
+    "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
@@ -121,7 +121,11 @@
     "fluidRestrictions": [],
     "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,

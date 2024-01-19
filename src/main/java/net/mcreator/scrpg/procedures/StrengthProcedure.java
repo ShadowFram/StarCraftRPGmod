@@ -1,8 +1,8 @@
 package net.mcreator.scrpg.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
 
-import javax.annotation.Nullable;
+import net.mcreator.scrpg.network.ScrpgModVariables;
 
 public class StrengthProcedure {
 	public static String execute(LevelAccessor world) {

@@ -292,8 +292,8 @@
       "registry_name": "protosslogo",
       "metadata": {
         "files": [
-          "src/main/resources/assets/scrpg/models/item/protosslogo.json",
-          "src/main/java/net/mcreator/scrpg/item/ProtosslogoItem.java"
+          "src/main/java/net/mcreator/scrpg/item/ProtosslogoItem.java",
+          "src/main/resources/assets/scrpg/models/item/protosslogo.json"
         ]
       },
       "path": "~/races/protoss"
@@ -400,19 +400,19 @@
     {
       "name": "strength",
       "type": "number",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "1.0"
     },
     {
       "name": "hp",
       "type": "number",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "20.0"
     },
     {
       "name": "speed",
       "type": "number",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "1.0"
     }
   ],

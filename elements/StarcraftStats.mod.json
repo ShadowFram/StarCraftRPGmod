@@ -23,16 +23,17 @@
       {
         "type": "label",
         "data": {
-          "name": "label_varstrength",
+          "name": "label_proc_strength",
           "text": {
-            "fixedValue": "<VAR:strength>"
+            "fixedValue": "",
+            "name": "Strength"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 184,
-          "y": 55
+          "x": 98,
+          "y": 44
         }
       }
     ],

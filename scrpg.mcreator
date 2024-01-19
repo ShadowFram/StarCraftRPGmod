@@ -367,6 +367,27 @@
         "files": []
       },
       "path": "~/Other mechanics"
+    },
+    {
+      "name": "Strength",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/StrengthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/guis"
     }
   ],
   "variable_elements": [
@@ -379,19 +400,19 @@
     {
       "name": "strength",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "1.0"
     },
     {
       "name": "hp",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "20.0"
     },
     {
       "name": "speed",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "1.0"
     }
   ],

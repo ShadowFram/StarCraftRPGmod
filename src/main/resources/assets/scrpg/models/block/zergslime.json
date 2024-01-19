@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "scrpg:block/zerg_slime",
+    "up": "scrpg:block/zerg_slime",
+    "north": "scrpg:block/zerg_slime",
+    "east": "scrpg:block/zerg_slime",
+    "south": "scrpg:block/zerg_slime",
+    "west": "scrpg:block/zerg_slime",
+    "particle": "scrpg:block/zerg_slime"
+  },
+  "render_type": "solid"
+}

@@ -431,6 +431,7 @@
       "item.scrpg.protosslogo": "Protosslogo",
       "gui.scrpg.starcraft_stats.label_varstrength": "\u003cVAR:strength\u003e",
       "block.scrpg.steelblock": "Steel Block",
+      "gui.scrpg.starcraft_stats.label_strength": "Strength:",
       "block.scrpg.creep": "Creep",
       "advancements.becometerran.title": "Become Terran!",
       "block.scrpg.protoss_metal_block": "Protoss Metal Block",

@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.scrpg.client.gui.StarcraftStatsScreen;
 import net.mcreator.scrpg.client.gui.RaceChooseScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -18,6 +19,7 @@ public class ScrpgModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
+			MenuScreens.register(ScrpgModMenus.STARCRAFT_STATS.get(), StarcraftStatsScreen::new);
 			MenuScreens.register(ScrpgModMenus.RACE_CHOOSE.get(), RaceChooseScreen::new);
 		});
 	}

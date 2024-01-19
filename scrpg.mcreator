@@ -3,6 +3,7 @@
     {
       "name": "RaceChoose",
       "type": "gui",
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "race_choose",
@@ -94,6 +95,21 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      },
+      "path": "~/guis"
+    },
+    {
+      "name": "StarcraftStats",
+      "type": "gui",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starcraft_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/world/inventory/StarcraftStatsMenu.java",
+          "src/main/java/net/mcreator/scrpg/client/gui/StarcraftStatsScreen.java"
         ]
       },
       "path": "~/guis"

@@ -13,11 +13,11 @@
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_zerg_logo",
-          "image": "zerg_logo.png",
-          "hoveredImage": "",
+          "name": "imagebutton_zergicon_gui_basic",
+          "image": "zergicon_gui_basic.png",
+          "hoveredImage": "zergicon_gui_howered.png",
           "x": 58,
-          "y": 38
+          "y": 41
         }
       }
     ],

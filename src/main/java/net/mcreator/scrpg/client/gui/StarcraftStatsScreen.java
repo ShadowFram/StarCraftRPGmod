@@ -20,7 +20,7 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_zerg_logo;
+	ImageButton imagebutton_zergicon_gui_basic;
 
 	public StarcraftStatsScreen(StarcraftStatsMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -78,9 +78,9 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_zerg_logo = new ImageButton(this.leftPos + -31, this.topPos + 1, 32, 32, 0, 0, 32, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zerg_logo.png"), 32, 64, e -> {
+		imagebutton_zergicon_gui_basic = new ImageButton(this.leftPos + -31, this.topPos + 4, 32, 32, 0, 0, 32, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zergicon_gui_basic.png"), 32, 64, e -> {
 		});
-		guistate.put("button:imagebutton_zerg_logo", imagebutton_zerg_logo);
-		this.addRenderableWidget(imagebutton_zerg_logo);
+		guistate.put("button:imagebutton_zergicon_gui_basic", imagebutton_zergicon_gui_basic);
+		this.addRenderableWidget(imagebutton_zergicon_gui_basic);
 	}
 }

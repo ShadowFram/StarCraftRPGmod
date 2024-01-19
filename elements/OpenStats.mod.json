@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "F10",
+    "keyBindingName": "Open Stats",
+    "keyBindingCategoryKey": "ui",
+    "onKeyPressed": {
+      "name": "OpenStatspROC"
+    }
+  }
+}

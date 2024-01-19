@@ -113,6 +113,55 @@
         ]
       },
       "path": "~/guis"
+    },
+    {
+      "name": "OpenStatspROC",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_statsp_roc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/OpenStatspROCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Other mechanics"
+    },
+    {
+      "name": "OpenStats",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/network/OpenStatsMessage.java"
+        ]
+      },
+      "path": "~/Other mechanics"
     }
   ],
   "variable_elements": [
@@ -128,6 +177,7 @@
     "en_us": {
       "advancements.become_zerg.title": "Become Zerg!",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
+      "key.scrpg.open_stats": "Open Stats",
       "item.scrpg.zerg_logo": "Zerg Logo"
     }
   },
@@ -154,6 +204,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Other mechanics",
+        "children": []
       }
     ]
   },

@@ -6,12 +6,12 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.scrpg.network.ScrpgModVariables;
 
-public class StatspeedProcedure {
+public class StatstrengthProcedure {
 	public static String execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return "";
-		ScrpgModVariables.MapVariables.get(world).speed = ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getBaseValue();
+		ScrpgModVariables.MapVariables.get(world).strength = ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getBaseValue();
 		ScrpgModVariables.MapVariables.get(world).syncData(world);
-		return new java.text.DecimalFormat("##.##").format(ScrpgModVariables.MapVariables.get(world).speed) + "";
+		return new java.text.DecimalFormat("##.##").format(ScrpgModVariables.MapVariables.get(world).strength) + "";
 	}
 }

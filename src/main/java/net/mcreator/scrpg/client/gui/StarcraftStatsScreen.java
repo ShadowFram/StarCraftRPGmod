@@ -10,7 +10,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.components.Button;
 
 import net.mcreator.scrpg.world.inventory.StarcraftStatsMenu;
-import net.mcreator.scrpg.procedures.StrengthProcedure;
+import net.mcreator.scrpg.procedures.StatstrengthProcedure;
 import net.mcreator.scrpg.procedures.StatspeedProcedure;
 import net.mcreator.scrpg.procedures.StathpProcedure;
 import net.mcreator.scrpg.network.StarcraftStatsButtonMessage;
@@ -77,15 +77,15 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack,
 
-				StrengthProcedure.execute(entity), 56, 10, -12829636);
+				StatstrengthProcedure.execute(world, entity), 56, 10, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_strenght"), 9, 10, -12829636);
 		this.font.draw(poseStack,
 
-				StathpProcedure.execute(entity), 26, 23, -12829636);
+				StathpProcedure.execute(world, entity), 26, 23, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_hp"), 9, 24, -12829636);
 		this.font.draw(poseStack,
 
-				StatspeedProcedure.execute(entity), 42, 38, -12829636);
+				StatspeedProcedure.execute(world, entity), 42, 38, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_speed"), 9, 37, -12829636);
 	}
 
@@ -102,7 +102,7 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 				ScrpgMod.PACKET_HANDLER.sendToServer(new StarcraftStatsButtonMessage(0, x, y, z));
 				StarcraftStatsButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 101, this.topPos + 5, 19, 20).build();
+		}).bounds(this.leftPos + 122, this.topPos + 5, 19, 20).build();
 		guistate.put("button:button_empty", button_empty);
 		this.addRenderableWidget(button_empty);
 		imagebutton_zergicon_gui_basic = new ImageButton(this.leftPos + -31, this.topPos + 4, 32, 32, 0, 0, 32, new ResourceLocation("scrpg:textures/screens/atlas/imagebutton_zergicon_gui_basic.png"), 32, 64, e -> {

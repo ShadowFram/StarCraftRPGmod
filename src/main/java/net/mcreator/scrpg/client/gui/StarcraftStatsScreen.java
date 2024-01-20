@@ -10,9 +10,12 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.components.Button;
 
 import net.mcreator.scrpg.world.inventory.StarcraftStatsMenu;
+import net.mcreator.scrpg.procedures.XPcountProcedure;
 import net.mcreator.scrpg.procedures.StrengthProcedure;
 import net.mcreator.scrpg.procedures.StatspeedProcedure;
 import net.mcreator.scrpg.procedures.StathpProcedure;
+import net.mcreator.scrpg.procedures.LevelProcedure;
+import net.mcreator.scrpg.procedures.LevelCondProcedure;
 import net.mcreator.scrpg.network.StarcraftStatsButtonMessage;
 import net.mcreator.scrpg.ScrpgMod;
 
@@ -77,16 +80,28 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack,
 
-				StrengthProcedure.execute(entity), 56, 10, -12829636);
+				StrengthProcedure.execute(world, entity), 56, 10, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_strenght"), 9, 10, -12829636);
 		this.font.draw(poseStack,
 
-				StathpProcedure.execute(entity), 26, 23, -12829636);
+				StathpProcedure.execute(world, entity), 26, 23, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_hp"), 9, 24, -12829636);
 		this.font.draw(poseStack,
 
-				StatspeedProcedure.execute(entity), 42, 38, -12829636);
+				StatspeedProcedure.execute(world, entity), 42, 38, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_speed"), 9, 37, -12829636);
+		this.font.draw(poseStack,
+
+				XPcountProcedure.execute(world), 162, 134, -12829636);
+		this.font.draw(poseStack,
+
+				LevelCondProcedure.execute(world), 204, 134, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_empty"), 199, 135, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_xp"), 146, 135, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_level"), 146, 149, -12829636);
+		this.font.draw(poseStack,
+
+				LevelProcedure.execute(world), 179, 150, -12829636);
 	}
 
 	@Override

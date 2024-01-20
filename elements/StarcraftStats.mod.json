@@ -127,6 +127,99 @@
           "x": 190,
           "y": 42
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_x_pcount",
+          "text": {
+            "fixedValue": "",
+            "name": "XPcount"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 251,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_level_cond",
+          "text": {
+            "fixedValue": "",
+            "name": "LevelCond"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 293,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "/"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 288,
+          "y": 172
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_xp",
+          "text": {
+            "fixedValue": "XP:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 235,
+          "y": 172
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level",
+          "text": {
+            "fixedValue": "Level:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 235,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_level",
+          "text": {
+            "fixedValue": "",
+            "name": "Level"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 268,
+          "y": 187
+        }
       }
     ],
     "gridSettings": {

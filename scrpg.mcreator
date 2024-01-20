@@ -385,6 +385,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -406,6 +410,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -427,6 +435,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -447,6 +459,112 @@
           {
             "name": "entity",
             "type": "entity"
+          }
+        ]
+      },
+      "path": "~/guis"
+    },
+    {
+      "name": "XpItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/XpItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Other mechanics"
+    },
+    {
+      "name": "Xp",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/scrpg/item/XpItem.java",
+          "src/main/resources/assets/scrpg/models/item/xp.json"
+        ]
+      },
+      "path": "~/Other mechanics"
+    },
+    {
+      "name": "XPcount",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "x_pcount",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/XPcountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/guis"
+    },
+    {
+      "name": "LevelCond",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_cond",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/LevelCondProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/guis"
+    },
+    {
+      "name": "Level",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/LevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -477,32 +595,54 @@
       "type": "number",
       "scope": "map",
       "value": "1.0"
+    },
+    {
+      "name": "XP",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Level",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
+    },
+    {
+      "name": "LevelCond",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "item_group.scrpg.protoss": "Protoss",
-      "item_group.scrpg.terran": "Terran",
       "gui.scrpg.starcraft_stats.label_strenght": "Strength:",
-      "advancements.becomeprotoss.title": "Become Protoss!",
+      "gui.scrpg.starcraft_stats.label_level": "Level:",
       "gui.scrpg.starcraft_stats.label_hp": "HP:",
-      "gui.scrpg.starcraft_stats.label_speed": "Speed:",
+      "advancements.becomeprotoss.title": "Become Protoss!",
       "advancements.become_zerg.title": "Become Zerg!",
       "block.scrpg.energy_block": "Energy Block",
-      "item.scrpg.terranlogo": "Terranlogo",
       "advancements.becomeprotoss.descr": "Choose Protoss like your fraction!",
+      "item.scrpg.zerg_logo": "Zerg Logo",
+      "gui.scrpg.starcraft_stats.label_xp": "XP:",
+      "gui.scrpg.starcraft_stats.label_varstrength": "\u003cVAR:strength\u003e",
+      "block.scrpg.creep": "Creep",
+      "block.scrpg.protoss_metal_block": "Protoss Metal Block",
+      "key.scrpg.open_stats": "Open Stats",
+      "item_group.scrpg.terran": "Terran",
+      "gui.scrpg.starcraft_stats.label_speed": "Speed:",
+      "item.scrpg.terranlogo": "Terranlogo",
+      "gui.scrpg.starcraft_stats.label_empty": "/",
       "gui.scrpg.starcraft_stats.button_empty": "+",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
-      "item.scrpg.zerg_logo": "Zerg Logo",
       "item.scrpg.protosslogo": "Protosslogo",
-      "gui.scrpg.starcraft_stats.label_varstrength": "\u003cVAR:strength\u003e",
+      "item.scrpg.xp": "Xp (X1)",
       "block.scrpg.steelblock": "Steel Block",
-      "block.scrpg.creep": "Creep",
       "advancements.becometerran.title": "Become Terran!",
-      "block.scrpg.protoss_metal_block": "Protoss Metal Block",
       "item_group.scrpg.zerg": "Zerg",
-      "key.scrpg.open_stats": "Open Stats",
       "advancements.becometerran.descr": "Choose Terran like your fraction!"
     }
   },

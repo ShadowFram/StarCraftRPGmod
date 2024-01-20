@@ -91,9 +91,9 @@ public class ScrpgModVariables {
 		public double strength = 1.0;
 		public double hp = 20.0;
 		public double speed = 1.0;
+		public double LevelCond = 0;
 		public double XP = 0;
 		public double Level = 1.0;
-		public double LevelCond = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -106,9 +106,9 @@ public class ScrpgModVariables {
 			strength = nbt.getDouble("strength");
 			hp = nbt.getDouble("hp");
 			speed = nbt.getDouble("speed");
+			LevelCond = nbt.getDouble("LevelCond");
 			XP = nbt.getDouble("XP");
 			Level = nbt.getDouble("Level");
-			LevelCond = nbt.getDouble("LevelCond");
 		}
 
 		@Override
@@ -117,9 +117,9 @@ public class ScrpgModVariables {
 			nbt.putDouble("strength", strength);
 			nbt.putDouble("hp", hp);
 			nbt.putDouble("speed", speed);
+			nbt.putDouble("LevelCond", LevelCond);
 			nbt.putDouble("XP", XP);
 			nbt.putDouble("Level", Level);
-			nbt.putDouble("LevelCond", LevelCond);
 			return nbt;
 		}
 

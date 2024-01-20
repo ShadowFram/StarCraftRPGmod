@@ -465,32 +465,20 @@
       "path": "~/guis"
     },
     {
-      "name": "XpItemInInventoryTick",
+      "name": "LevelCond",
       "type": "procedure",
-      "sortid": 28,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "xp_item_in_inventory_tick",
+      "registry_name": "level_cond",
       "metadata": {
+        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/scrpg/procedures/XpItemInInventoryTickProcedure.java"
+          "src/main/java/net/mcreator/scrpg/procedures/LevelCondProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
-      "path": "~/Other mechanics"
+      "path": "~/guis"
     },
     {
       "name": "Xp",
@@ -519,35 +507,33 @@
         "files": [
           "src/main/java/net/mcreator/scrpg/procedures/XPcountProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/guis"
     },
     {
-      "name": "LevelCond",
+      "name": "XpItemInInventoryTick",
       "type": "procedure",
-      "sortid": 31,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "level_cond",
+      "registry_name": "xp_item_in_inventory_tick",
       "metadata": {
-        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/scrpg/procedures/LevelCondProcedure.java"
+          "src/main/java/net/mcreator/scrpg/procedures/XpItemInInventoryTickProcedure.java"
         ],
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
-      "path": "~/guis"
+      "path": "~/Other mechanics"
     },
     {
       "name": "Level",
@@ -561,7 +547,27 @@
         "files": [
           "src/main/java/net/mcreator/scrpg/procedures/LevelProcedure.java"
         ],
+        "dependencies": []
+      },
+      "path": "~/guis"
+    },
+    {
+      "name": "Statstrength",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "statstrength",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/StatstrengthProcedure.java"
+        ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "world",
             "type": "world"
@@ -597,6 +603,12 @@
       "value": "1.0"
     },
     {
+      "name": "LevelCond",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
       "name": "XP",
       "type": "number",
       "scope": "map",
@@ -607,12 +619,6 @@
       "type": "number",
       "scope": "map",
       "value": "1.0"
-    },
-    {
-      "name": "LevelCond",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -639,7 +645,6 @@
       "gui.scrpg.starcraft_stats.button_empty": "+",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "item.scrpg.protosslogo": "Protosslogo",
-      "item.scrpg.xp": "Xp (X1)",
       "block.scrpg.steelblock": "Steel Block",
       "advancements.becometerran.title": "Become Terran!",
       "item_group.scrpg.zerg": "Zerg",

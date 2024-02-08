@@ -1,11 +1,11 @@
 package net.mcreator.scrpg.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
 
-import javax.annotation.Nullable;
+import net.mcreator.scrpg.network.ScrpgModVariables;
 
 public class XPcountProcedure {
-	public static String execute() {
-		return new java.text.DecimalFormat("##.##").format() + "";
+	public static String execute(LevelAccessor world) {
+		return new java.text.DecimalFormat("##.##").format(ScrpgModVariables.MapVariables.get(world).stat_XP) + "";
 	}
 }

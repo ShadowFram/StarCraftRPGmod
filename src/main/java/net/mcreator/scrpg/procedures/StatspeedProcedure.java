@@ -1,15 +1,17 @@
 package net.mcreator.scrpg.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 
-import javax.annotation.Nullable;
+import net.mcreator.scrpg.network.ScrpgModVariables;
 
 public class StatspeedProcedure {
 	public static String execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return "";
-		ScrpgModVariables.MapVariables.get(world).speed = ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getBaseValue();
+		ScrpgModVariables.MapVariables.get(world).stat_strength = ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getBaseValue();
 		ScrpgModVariables.MapVariables.get(world).syncData(world);
-		return new java.text.DecimalFormat("##.##").format(ScrpgModVariables.MapVariables.get(world).speed) + "";
+		return new java.text.DecimalFormat("##.##").format(ScrpgModVariables.MapVariables.get(world).stat_strength) + "";
 	}
 }

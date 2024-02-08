@@ -1,15 +1,11 @@
 package net.mcreator.scrpg.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
 
-import javax.annotation.Nullable;
+import net.mcreator.scrpg.network.ScrpgModVariables;
 
 public class StrengthProcedure {
-	public static String execute(LevelAccessor world, Entity entity) {
-		if (entity == null)
-			return "";
-		ScrpgModVariables.MapVariables.get(world).strength = ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getBaseValue();
-		ScrpgModVariables.MapVariables.get(world).syncData(world);
-		return new java.text.DecimalFormat("##.##").format(ScrpgModVariables.MapVariables.get(world).strength) + "";
+	public static String execute(LevelAccessor world) {
+		return new java.text.DecimalFormat("##.##").format(ScrpgModVariables.MapVariables.get(world).stat_strength) + "";
 	}
 }

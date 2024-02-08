@@ -383,10 +383,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -476,7 +472,12 @@
         "files": [
           "src/main/java/net/mcreator/scrpg/procedures/LevelCondProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/guis"
     },
@@ -507,7 +508,12 @@
         "files": [
           "src/main/java/net/mcreator/scrpg/procedures/XPcountProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/guis"
     },
@@ -530,6 +536,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -547,7 +557,12 @@
         "files": [
           "src/main/java/net/mcreator/scrpg/procedures/LevelProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/guis"
     },
@@ -585,19 +600,19 @@
       "value": "false"
     },
     {
-      "name": "strength",
+      "name": "stat_strength",
       "type": "number",
       "scope": "map",
       "value": "1.0"
     },
     {
-      "name": "hp",
+      "name": "stat_hp",
       "type": "number",
       "scope": "map",
       "value": "20.0"
     },
     {
-      "name": "speed",
+      "name": "stat_speed",
       "type": "number",
       "scope": "map",
       "value": "1.0"
@@ -609,13 +624,13 @@
       "value": "0"
     },
     {
-      "name": "XP",
+      "name": "stat_XP",
       "type": "number",
       "scope": "map",
       "value": "0"
     },
     {
-      "name": "Level",
+      "name": "stat_Level",
       "type": "number",
       "scope": "map",
       "value": "1.0"
@@ -645,6 +660,7 @@
       "gui.scrpg.starcraft_stats.button_empty": "+",
       "advancements.become_zerg.descr": "Choose zerg like your fraction!",
       "item.scrpg.protosslogo": "Protosslogo",
+      "item.scrpg.xp": "Xp (X1)",
       "block.scrpg.steelblock": "Steel Block",
       "advancements.becometerran.title": "Become Terran!",
       "item_group.scrpg.zerg": "Zerg",

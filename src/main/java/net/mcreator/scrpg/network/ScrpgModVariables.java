@@ -88,12 +88,12 @@ public class ScrpgModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "scrpg_mapvars";
 		public boolean ChooseFraction = false;
-		public double strength = 1.0;
-		public double hp = 20.0;
-		public double speed = 1.0;
+		public double stat_strength = 1.0;
+		public double stat_hp = 20.0;
+		public double stat_speed = 1.0;
 		public double LevelCond = 0;
-		public double XP = 0;
-		public double Level = 1.0;
+		public double stat_XP = 0;
+		public double stat_Level = 1.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -103,23 +103,23 @@ public class ScrpgModVariables {
 
 		public void read(CompoundTag nbt) {
 			ChooseFraction = nbt.getBoolean("ChooseFraction");
-			strength = nbt.getDouble("strength");
-			hp = nbt.getDouble("hp");
-			speed = nbt.getDouble("speed");
+			stat_strength = nbt.getDouble("stat_strength");
+			stat_hp = nbt.getDouble("stat_hp");
+			stat_speed = nbt.getDouble("stat_speed");
 			LevelCond = nbt.getDouble("LevelCond");
-			XP = nbt.getDouble("XP");
-			Level = nbt.getDouble("Level");
+			stat_XP = nbt.getDouble("stat_XP");
+			stat_Level = nbt.getDouble("stat_Level");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("ChooseFraction", ChooseFraction);
-			nbt.putDouble("strength", strength);
-			nbt.putDouble("hp", hp);
-			nbt.putDouble("speed", speed);
+			nbt.putDouble("stat_strength", stat_strength);
+			nbt.putDouble("stat_hp", stat_hp);
+			nbt.putDouble("stat_speed", stat_speed);
 			nbt.putDouble("LevelCond", LevelCond);
-			nbt.putDouble("XP", XP);
-			nbt.putDouble("Level", Level);
+			nbt.putDouble("stat_XP", stat_XP);
+			nbt.putDouble("stat_Level", stat_Level);
 			return nbt;
 		}
 

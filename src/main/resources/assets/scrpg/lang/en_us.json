@@ -1,7 +1,7 @@
 {
   "item_group.scrpg.protoss": "Protoss",
-  "gui.scrpg.starcraft_stats.label_strenght": "Strength:",
   "gui.scrpg.starcraft_stats.label_level": "Level:",
+  "gui.scrpg.starcraft_stats.label_strenght": "Strength:",
   "gui.scrpg.starcraft_stats.label_hp": "HP:",
   "advancements.becomeprotoss.title": "Become Protoss!",
   "advancements.become_zerg.title": "Become Zerg!",

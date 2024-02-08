@@ -220,6 +220,40 @@
           "x": 268,
           "y": 187
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_point_counter",
+          "text": {
+            "fixedValue": "",
+            "name": "PointCounter"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FactionZergVisibleCond"
+          },
+          "x": 135,
+          "y": 173
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_points",
+          "text": {
+            "fixedValue": "Points:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 98,
+          "y": 172
+        }
       }
     ],
     "gridSettings": {

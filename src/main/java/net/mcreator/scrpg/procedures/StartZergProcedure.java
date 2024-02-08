@@ -1,5 +1,6 @@
 package net.mcreator.scrpg.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
@@ -7,8 +8,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
+import net.mcreator.scrpg.network.ScrpgModVariables;
+
 public class StartZergProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _player) {
@@ -21,5 +24,7 @@ public class StartZergProcedure {
 		}
 		if (entity instanceof Player _player)
 			_player.closeContainer();
+		ScrpgModVariables.MapVariables.get(world).Faction = "zerg";
+		ScrpgModVariables.MapVariables.get(world).syncData(world);
 	}
 }

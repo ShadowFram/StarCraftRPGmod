@@ -94,6 +94,8 @@ public class ScrpgModVariables {
 		public double LevelCond = 0;
 		public double stat_XP = 0;
 		public double stat_Level = 1.0;
+		public double stat_points = 0.0;
+		public String Faction = "\"\"";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -109,6 +111,8 @@ public class ScrpgModVariables {
 			LevelCond = nbt.getDouble("LevelCond");
 			stat_XP = nbt.getDouble("stat_XP");
 			stat_Level = nbt.getDouble("stat_Level");
+			stat_points = nbt.getDouble("stat_points");
+			Faction = nbt.getString("Faction");
 		}
 
 		@Override
@@ -120,6 +124,8 @@ public class ScrpgModVariables {
 			nbt.putDouble("LevelCond", LevelCond);
 			nbt.putDouble("stat_XP", stat_XP);
 			nbt.putDouble("stat_Level", stat_Level);
+			nbt.putDouble("stat_points", stat_points);
+			nbt.putString("Faction", Faction);
 			return nbt;
 		}
 

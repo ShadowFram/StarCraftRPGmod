@@ -60,6 +60,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -590,6 +594,48 @@
         ]
       },
       "path": "~/guis"
+    },
+    {
+      "name": "PointCounter",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "point_counter",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/PointCounterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/guis"
+    },
+    {
+      "name": "FactionZergVisibleCond",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faction_zerg_visible_cond",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/scrpg/procedures/FactionZergVisibleCondProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/guis"
     }
   ],
   "variable_elements": [
@@ -634,6 +680,18 @@
       "type": "number",
       "scope": "map",
       "value": "1.0"
+    },
+    {
+      "name": "stat_points",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "Faction",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -654,6 +712,7 @@
       "block.scrpg.protoss_metal_block": "Protoss Metal Block",
       "key.scrpg.open_stats": "Open Stats",
       "item_group.scrpg.terran": "Terran",
+      "gui.scrpg.starcraft_stats.label_points": "Points:",
       "gui.scrpg.starcraft_stats.label_speed": "Speed:",
       "item.scrpg.terranlogo": "Terranlogo",
       "gui.scrpg.starcraft_stats.label_empty": "/",

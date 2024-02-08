@@ -25,5 +25,9 @@ public class XpItemInInventoryTickProcedure {
 			ScrpgModVariables.MapVariables.get(world).stat_Level = ScrpgModVariables.MapVariables.get(world).stat_Level + 1;
 			ScrpgModVariables.MapVariables.get(world).syncData(world);
 		}
+		if ((ScrpgModVariables.MapVariables.get(world).Faction).equals("zerg")) {
+			ScrpgModVariables.MapVariables.get(world).stat_points = ScrpgModVariables.MapVariables.get(world).stat_points + 1;
+			ScrpgModVariables.MapVariables.get(world).syncData(world);
+		}
 	}
 }

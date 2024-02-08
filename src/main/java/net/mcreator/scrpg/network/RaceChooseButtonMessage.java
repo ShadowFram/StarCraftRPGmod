@@ -70,7 +70,7 @@ public class RaceChooseButtonMessage {
 		}
 		if (buttonID == 1) {
 
-			StartZergProcedure.execute(entity);
+			StartZergProcedure.execute(world, entity);
 		}
 		if (buttonID == 2) {
 

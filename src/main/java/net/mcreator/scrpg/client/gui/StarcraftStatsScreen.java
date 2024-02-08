@@ -14,8 +14,10 @@ import net.mcreator.scrpg.procedures.XPcountProcedure;
 import net.mcreator.scrpg.procedures.StatstrengthProcedure;
 import net.mcreator.scrpg.procedures.StatspeedProcedure;
 import net.mcreator.scrpg.procedures.StathpProcedure;
+import net.mcreator.scrpg.procedures.PointCounterProcedure;
 import net.mcreator.scrpg.procedures.LevelProcedure;
 import net.mcreator.scrpg.procedures.LevelCondProcedure;
+import net.mcreator.scrpg.procedures.FactionZergVisibleCondProcedure;
 import net.mcreator.scrpg.network.StarcraftStatsButtonMessage;
 import net.mcreator.scrpg.ScrpgMod;
 
@@ -102,6 +104,11 @@ public class StarcraftStatsScreen extends AbstractContainerScreen<StarcraftStats
 		this.font.draw(poseStack,
 
 				LevelProcedure.execute(world), 179, 150, -12829636);
+		if (FactionZergVisibleCondProcedure.execute(world))
+			this.font.draw(poseStack,
+
+					PointCounterProcedure.execute(world), 46, 136, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.scrpg.starcraft_stats.label_points"), 9, 135, -12829636);
 	}
 
 	@Override

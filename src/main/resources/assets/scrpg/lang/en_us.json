@@ -14,6 +14,7 @@
   "block.scrpg.protoss_metal_block": "Protoss Metal Block",
   "key.scrpg.open_stats": "Open Stats",
   "item_group.scrpg.terran": "Terran",
+  "gui.scrpg.starcraft_stats.label_points": "Points:",
   "gui.scrpg.starcraft_stats.label_speed": "Speed:",
   "item.scrpg.terranlogo": "Terranlogo",
   "gui.scrpg.starcraft_stats.label_empty": "/",
